@@ -10,11 +10,11 @@ let package = Package(
         .tvOS(.v9)
     ],
     products: [
-        .library(name: "plcrashreporter", targets: ["plcrashreporter"])
+        .library(name: "PLCrashReporter", targets: ["PLCrashReporter"])
     ],
     targets: [
         .target(
-            name: "plcrashreporter",
+            name: "PLCrashReporter",
             path: "",
             exclude: [
                 "Source/dwarf_opstream.hpp",
