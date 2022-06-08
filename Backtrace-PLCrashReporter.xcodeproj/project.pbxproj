@@ -1,0 +1,1656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00DCCD41E6109A7F13F32B63 /* PLCrashAsyncLinkedListTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = D33C6AF1C201C16A6A5B3249 /* PLCrashAsyncLinkedListTests.mm */; };
+		039555BD6DF039C2F9E0E074 /* unwind_test_arm64_frame.S in Sources */ = {isa = PBXBuildFile; fileRef = 3418BAE068591B28138B2A22 /* unwind_test_arm64_frame.S */; };
+		04292079D1DB7A618D005E7C /* PLCrashTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A1EB4E187E5335D5F06BD7 /* PLCrashTestCase.m */; };
+		045DF07556A0735E018ACFF2 /* PLCrashAsyncCompactUnwindEncodingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AD44AAFA030E15E4A7C045 /* PLCrashAsyncCompactUnwindEncodingTests.m */; };
+		048964E2A49FA0CAB67F8A15 /* mach_exc_x86_64User.inc in Resources */ = {isa = PBXBuildFile; fileRef = FB70B6EBC721C175808D0A0D /* mach_exc_x86_64User.inc */; };
+		04CEECC01FBA951F403D9ED6 /* PLCrashAsyncCompactUnwindEncodingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AD44AAFA030E15E4A7C045 /* PLCrashAsyncCompactUnwindEncodingTests.m */; };
+		06A864916FC55019A1430E20 /* unwind_test_x86_frameless_big.S in Sources */ = {isa = PBXBuildFile; fileRef = 9F361F526146346F40966CBB /* unwind_test_x86_frameless_big.S */; };
+		07B43EBACFD3B239FB5CEFF8 /* PLCrashAsyncSignalInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A62CD6EF6261D13AFF749F98 /* PLCrashAsyncSignalInfoTests.m */; };
+		0814FD6D4892E95E6F01C673 /* PLCrashSignalHandlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2693B3132C82CCE2AE8ECC /* PLCrashSignalHandlerTests.m */; };
+		097BAD4052CAE59A6F921BF0 /* PLCrashLogWriterEncodingTests.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 77F05D421BDE5A3B3C127578 /* PLCrashLogWriterEncodingTests.pb-c.c */; };
+		09E65227D2A6B0E94A66C267 /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = ABA4439096CC3B223923A433 /* protobuf-c.c */; };
+		0B48BA20683FEB8BA87D1675 /* unwind_test_x86_64_frameless.S in Sources */ = {isa = PBXBuildFile; fileRef = DAC6644CAAA2716FCCC6EEDA /* unwind_test_x86_64_frameless.S */; };
+		0B7FBFD0004AC093DC27905D /* protobuf-c.h in Headers */ = {isa = PBXBuildFile; fileRef = 83265C16E75798F82A3A6A61 /* protobuf-c.h */; };
+		0DF65D7BCDC108F659690C4D /* PLCrashFrameStackUnwindTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C3C58F6C22ABD6160C80A7 /* PLCrashFrameStackUnwindTests.m */; };
+		0FDEF640DC34D2C7EDC6DDC0 /* PLCrashAsyncTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CA93EAA359EA3B2A4AB08E /* PLCrashAsyncTests.m */; };
+		10DF3428E578F6AE5CC765C5 /* mach_exc_i386User.inc in Resources */ = {isa = PBXBuildFile; fileRef = D3EAA5AC022A17697D3DE867 /* mach_exc_i386User.inc */; };
+		12509D48AD82270A4FDF10DC /* unwind_test_x86.S in Sources */ = {isa = PBXBuildFile; fileRef = E5A876E15335F26A5B9F781C /* unwind_test_x86.S */; };
+		12A084B476AB0113602B07FA /* PLCrashReport.proto in Resources */ = {isa = PBXBuildFile; fileRef = BB003303E852983AA72ADE4E /* PLCrashReport.proto */; };
+		132052D0CD34F1487024969D /* PLCrashAsyncThreadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F3E354AA5E0F270FE8E09 /* PLCrashAsyncThreadTests.m */; };
+		13377DCC54D8AFB36CCD9CD6 /* PLCrashAsyncSignalInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A62CD6EF6261D13AFF749F98 /* PLCrashAsyncSignalInfoTests.m */; };
+		13D23679844FDAA6781290C3 /* unwind_test_x86_frameless.S in Sources */ = {isa = PBXBuildFile; fileRef = 9558314A7A7CF1E898DF0487 /* unwind_test_x86_frameless.S */; };
+		14233643D519E50CF2FE62C6 /* PLCrashMachExceptionPortTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E22244CF324B60BE96FB94AB /* PLCrashMachExceptionPortTests.m */; };
+		14A6FB23ADC43E45C135C0B9 /* PLCrashMachExceptionServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 395F299D32F64E7D9A8B9FAE /* PLCrashMachExceptionServerTests.m */; };
+		15F01B46D2D757566EA1CA70 /* PLCrashReport.proto in Resources */ = {isa = PBXBuildFile; fileRef = BB003303E852983AA72ADE4E /* PLCrashReport.proto */; };
+		16E9774C3D5AA945F39DC8D0 /* unwind_test_x86_64.S in Sources */ = {isa = PBXBuildFile; fileRef = 20F7011B3C5B2F36F41CF431 /* unwind_test_x86_64.S */; };
+		173307E5C62D69B1FA8197A8 /* unwind_test_x86_64_frameless_big.S in Sources */ = {isa = PBXBuildFile; fileRef = 6338C1EBC7A951B8583C74C3 /* unwind_test_x86_64_frameless_big.S */; };
+		1962105EE75B1E409F35C217 /* PLCrashReporterNSErrorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D3B37FE451188182D16E3E /* PLCrashReporterNSErrorTests.m */; };
+		198E088761903DE8BC9D2701 /* PLCrashAsyncDwarfPrimitivesTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9F53EA8140AEA6C5E9BE075A /* PLCrashAsyncDwarfPrimitivesTests.mm */; };
+		198EEA8F98C3E65A992A00B6 /* PLCrashAsyncDwarfCFAStateTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D60FB32E06E707E0227BA17 /* PLCrashAsyncDwarfCFAStateTests.mm */; };
+		1CB01F95FDAB57171B638D21 /* PLCrashAsyncMachExceptionInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87119412D70872CEBC1E78F2 /* PLCrashAsyncMachExceptionInfoTests.m */; };
+		1D315FF909C95E4DAB3B65F3 /* unwind_test_x86_64.S in Sources */ = {isa = PBXBuildFile; fileRef = 20F7011B3C5B2F36F41CF431 /* unwind_test_x86_64.S */; };
+		1E3F1D4E70F16FA93B613AB2 /* PLCrashFrameCompactUnwindTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 860E3BB18156C290579C4528 /* PLCrashFrameCompactUnwindTests.m */; };
+		1EA467AE8AC67851B99BCB9B /* PLCrashAsyncMObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF118306F8266F1DD09DF1EB /* PLCrashAsyncMObjectTests.m */; };
+		2020CD175232F8B333A608C4 /* unwind_test_x86_frameless.S in Sources */ = {isa = PBXBuildFile; fileRef = 9558314A7A7CF1E898DF0487 /* unwind_test_x86_frameless.S */; };
+		203EEA154C0742E87503EC3B /* PLCrashProcessInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE36C55809C3E77DC56F655 /* PLCrashProcessInfoTests.m */; };
+		20BA3C5E4313ECD6A1AE5950 /* unwind_test_x86_64_frame.S in Sources */ = {isa = PBXBuildFile; fileRef = 3E93485C00E79F5567031290 /* unwind_test_x86_64_frame.S */; };
+		23BAF29FC60ACD9FAE9BA7D9 /* unwind_test_x86.S in Sources */ = {isa = PBXBuildFile; fileRef = E5A876E15335F26A5B9F781C /* unwind_test_x86.S */; };
+		25675AD475C6EC8080208863 /* mach_exc_x86_64User.inc in Resources */ = {isa = PBXBuildFile; fileRef = FB70B6EBC721C175808D0A0D /* mach_exc_x86_64User.inc */; };
+		26785782842BF678E6B40EA5 /* PLCrashSignalHandlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2693B3132C82CCE2AE8ECC /* PLCrashSignalHandlerTests.m */; };
+		2B57C19740D26749C6A36247 /* mach_exc.c in Sources */ = {isa = PBXBuildFile; fileRef = 327D3DA28C7F23F891BDA7DB /* mach_exc.c */; };
+		2E7755572537464484C20999 /* PLCrashMachExceptionServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 395F299D32F64E7D9A8B9FAE /* PLCrashMachExceptionServerTests.m */; };
+		2E8E43AED23418311D9C31C4 /* unwind_test_x86_frame.S in Sources */ = {isa = PBXBuildFile; fileRef = A8E52E39F32EF32449C5C7DA /* unwind_test_x86_frame.S */; };
+		2E9955E897B1688159DE3C3E /* unwind_test_arm64.S in Sources */ = {isa = PBXBuildFile; fileRef = CD79958F8184E76326FE2CBF /* unwind_test_arm64.S */; };
+		2F246434EB32D8E9EDF045FD /* PLCrashFrameDWARFUnwindTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA2B5D1A6DAC14C8713AC0C /* PLCrashFrameDWARFUnwindTests.m */; };
+		30F8D1CC791E26933ECF06EE /* PLCrashSysctlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B934B7D93ED027587B1F16 /* PLCrashSysctlTests.m */; };
+		336ABA2B2FEECCDC5D3F5B6C /* PLCrashReporterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B90D439683B696C30428034D /* PLCrashReporterTests.m */; };
+		349A0E2F50A2D155A4878906 /* PLCrashFrameCompactUnwindTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 860E3BB18156C290579C4528 /* PLCrashFrameCompactUnwindTests.m */; };
+		39848D4DA6890072842B194A /* PLCrashLogWriterEncodingTests.proto in Resources */ = {isa = PBXBuildFile; fileRef = FA582606DAB130F1254F4025 /* PLCrashLogWriterEncodingTests.proto */; };
+		3C77789D72E935F7D027AD9A /* dwarf_opstream_tests.mm in Sources */ = {isa = PBXBuildFile; fileRef = EC99C9E9C9CA3E877961005F /* dwarf_opstream_tests.mm */; };
+		3DDD6463460845E658029A55 /* unwind_test_x86_64_disable_compact_frame.S in Sources */ = {isa = PBXBuildFile; fileRef = 44ED13AB052E96A90C7C5062 /* unwind_test_x86_64_disable_compact_frame.S */; };
+		4087FDA71DD2369618E0D4DD /* PLCrashTestThreadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56439D2DD0180B482CC51218 /* PLCrashTestThreadTests.m */; };
+		41DAE4768F080930AAEF8C57 /* unwind_test_x86_frameless_big.S in Sources */ = {isa = PBXBuildFile; fileRef = 9F361F526146346F40966CBB /* unwind_test_x86_frameless_big.S */; };
+		43347523D525BCE02E1CE674 /* PLCrashAsyncDwarfCFAStateEvaluationTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F0DF0E516FFF138A4BB2BC /* PLCrashAsyncDwarfCFAStateEvaluationTests.mm */; };
+		455D683E153C7562B79FB696 /* mach_exc.h in Headers */ = {isa = PBXBuildFile; fileRef = A359D25DC7CEC3D8E0D72EC4 /* mach_exc.h */; };
+		4775F91FD0DB1B71E1685BAB /* PLCrashReportTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2CA938841627CDBAE795F4 /* PLCrashReportTests.m */; };
+		4841255900632D1ADEB53F8E /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = ABA4439096CC3B223923A433 /* protobuf-c.c */; };
+		488492EA5EA8DA8FE4D68864 /* PLCrashAsyncMObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF118306F8266F1DD09DF1EB /* PLCrashAsyncMObjectTests.m */; };
+		4A5C275097BAE3D3342D7924 /* PLCrashHostInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CB3AA18EB0E50560AB5F26 /* PLCrashHostInfoTests.m */; };
+		4C0EB2F7D6DF1F10C57F5CBD /* PLCrashLogWriterEncodingTests.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 77F05D421BDE5A3B3C127578 /* PLCrashLogWriterEncodingTests.pb-c.c */; };
+		4C4912C977003FC535A72AB2 /* unwind_test_x86_unusual.S in Sources */ = {isa = PBXBuildFile; fileRef = C5842D1C8D8C8927BF4B27CA /* unwind_test_x86_unusual.S */; };
+		4D024BAC7A9DDF85A81E3884 /* unwind_test_x86_64_frameless_big.S in Sources */ = {isa = PBXBuildFile; fileRef = 6338C1EBC7A951B8583C74C3 /* unwind_test_x86_64_frameless_big.S */; };
+		4D36D0FC48E9218ABED9E21F /* PLCrashAsyncDwarfFDETests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D2184206BCE212E847837E7 /* PLCrashAsyncDwarfFDETests.mm */; };
+		4D95A8C8A4B3523ECB4CC4E4 /* mach_exc.c in Sources */ = {isa = PBXBuildFile; fileRef = 327D3DA28C7F23F891BDA7DB /* mach_exc.c */; };
+		4FBF00C249C689A20D01775A /* PLCrashAsyncMachOStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8996E273B78204363F77424 /* PLCrashAsyncMachOStringTests.m */; };
+		51BE35187A0119A4FA079C57 /* protobuf-c.h in Headers */ = {isa = PBXBuildFile; fileRef = 83265C16E75798F82A3A6A61 /* protobuf-c.h */; };
+		52BE5293606BAA9827EEB90A /* PLCrashSignalHandlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2693B3132C82CCE2AE8ECC /* PLCrashSignalHandlerTests.m */; };
+		540B9FA530B2160F8D093C5A /* PLCrashAsyncDwarfCFAStateEvaluationTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F0DF0E516FFF138A4BB2BC /* PLCrashAsyncDwarfCFAStateEvaluationTests.mm */; };
+		55D5CDF21A31A341E23437AF /* unwind_test_x86_64_frameless.S in Sources */ = {isa = PBXBuildFile; fileRef = DAC6644CAAA2716FCCC6EEDA /* unwind_test_x86_64_frameless.S */; };
+		597DAE9C40AE8C0236568CA7 /* PLCrashAsyncThreadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F3E354AA5E0F270FE8E09 /* PLCrashAsyncThreadTests.m */; };
+		5A327D56DCE6764928A5A5E4 /* PLCrashFrameStackUnwindTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C3C58F6C22ABD6160C80A7 /* PLCrashFrameStackUnwindTests.m */; };
+		5BC6EB4D97C912FCD7595AFF /* PLCrashAsyncThreadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F3E354AA5E0F270FE8E09 /* PLCrashAsyncThreadTests.m */; };
+		5CD64644B3A98C9FA32D6AF4 /* dwarf_stack_tests.mm in Sources */ = {isa = PBXBuildFile; fileRef = DE319FC057861F94EC2125C0 /* dwarf_stack_tests.mm */; };
+		614EA45AA5591B67D2F203F0 /* dwarf_opstream_tests.mm in Sources */ = {isa = PBXBuildFile; fileRef = EC99C9E9C9CA3E877961005F /* dwarf_opstream_tests.mm */; };
+		618A462B34D544408E841EDD /* PLCrashLogWriterEncodingTests.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 77F05D421BDE5A3B3C127578 /* PLCrashLogWriterEncodingTests.pb-c.c */; };
+		6286E6AE881751B98F7907B1 /* unwind_test_x86_64_unusual.S in Sources */ = {isa = PBXBuildFile; fileRef = 2C9CA8DB7E9E3033C23A104D /* unwind_test_x86_64_unusual.S */; };
+		63C085B80A4B552BBDA79624 /* PLCrashAsyncDwarfFDETests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D2184206BCE212E847837E7 /* PLCrashAsyncDwarfFDETests.mm */; };
+		64F9FF1AE22977C717C729F8 /* PLCrashAsyncSymbolicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5ED72914546606349C523 /* PLCrashAsyncSymbolicationTests.m */; };
+		660030EA09AB2019BFA65E85 /* PLCrashAsyncMachOImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9014AABC53A5A801823282D4 /* PLCrashAsyncMachOImageTests.m */; };
+		6A384B95630D10F7BC976350 /* PLCrashAsyncDwarfExpressionTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE89200D12E8CF48102A28AB /* PLCrashAsyncDwarfExpressionTests.mm */; };
+		6AE2A418BA06451E28AD305B /* unwind_test_arm64_frameless.S in Sources */ = {isa = PBXBuildFile; fileRef = 9DC26D29F9EB49E8D6327C00 /* unwind_test_arm64_frameless.S */; };
+		6BD7ACE8314150AE59AF8081 /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = ABA4439096CC3B223923A433 /* protobuf-c.c */; };
+		6C7F8FBCEC9F79CD37965E57 /* PLCrashSysctlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B934B7D93ED027587B1F16 /* PLCrashSysctlTests.m */; };
+		6DA59B8BC6E8F93ACB796F28 /* PLCrashLogWriterEncodingTests.proto in Resources */ = {isa = PBXBuildFile; fileRef = FA582606DAB130F1254F4025 /* PLCrashLogWriterEncodingTests.proto */; };
+		6E524C838FD6B586F390415D /* PLCrashFrameStackUnwindTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C3C58F6C22ABD6160C80A7 /* PLCrashFrameStackUnwindTests.m */; };
+		712D7550CB27B2D6C6B2318B /* PLCrashReportTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2CA938841627CDBAE795F4 /* PLCrashReportTests.m */; };
+		7145813DBE406D7F5A377BDA /* Backtrace_PLCrashReporter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D27C026B759C888A568802FE /* Backtrace_PLCrashReporter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		742672DEBA49B42736761FE1 /* PLCrashFrameDWARFUnwindTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA2B5D1A6DAC14C8713AC0C /* PLCrashFrameDWARFUnwindTests.m */; };
+		74ED87F541008F59B76704CA /* mach_exc_i386User.inc in Resources */ = {isa = PBXBuildFile; fileRef = D3EAA5AC022A17697D3DE867 /* mach_exc_i386User.inc */; };
+		750B7B7149B69A6C9D449089 /* PLCrashMachExceptionPortTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E22244CF324B60BE96FB94AB /* PLCrashMachExceptionPortTests.m */; };
+		75A12D43932421A080018BBB /* dwarf_stack_tests.mm in Sources */ = {isa = PBXBuildFile; fileRef = DE319FC057861F94EC2125C0 /* dwarf_stack_tests.mm */; };
+		75B5E38FC83A746B39910130 /* unwind_test_x86_64_disable_compact_frame.S in Sources */ = {isa = PBXBuildFile; fileRef = 44ED13AB052E96A90C7C5062 /* unwind_test_x86_64_disable_compact_frame.S */; };
+		76D1F53910DCA7D3BF211284 /* PLCrashAsyncMachExceptionInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87119412D70872CEBC1E78F2 /* PLCrashAsyncMachExceptionInfoTests.m */; };
+		776DE60353710C33C3762C1F /* Tests in Resources */ = {isa = PBXBuildFile; fileRef = F5CB1C5C437543B45EF3910F /* Tests */; };
+		7989898563CA0B084CA0FD9D /* PLCrashMachExceptionPortTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E22244CF324B60BE96FB94AB /* PLCrashMachExceptionPortTests.m */; };
+		7B20B01C6D75A6AFBB6EE639 /* PLCrashAsyncMachOImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9014AABC53A5A801823282D4 /* PLCrashAsyncMachOImageTests.m */; };
+		7E1A9F2A51D119E287C9C497 /* unwind_test_x86_disable_compact_frame.S in Sources */ = {isa = PBXBuildFile; fileRef = 77C87EA0448C86BB5E1F4F39 /* unwind_test_x86_disable_compact_frame.S */; };
+		7E533520D2A7EE7D3EAAF674 /* Backtrace_PLCrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27C026B759C888A568802FE /* Backtrace_PLCrashReporter.framework */; };
+		7FDBCB81DCEFE8C5CF7F46A0 /* PLCrashHostInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CB3AA18EB0E50560AB5F26 /* PLCrashHostInfoTests.m */; };
+		80844CFEB7143365D21B0FF0 /* PLCrashUncaughtExceptionHandlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE23D020690F8D441B0D21A /* PLCrashUncaughtExceptionHandlerTests.m */; };
+		821D8A2E5315D44E74C5F611 /* unwind_test_harness.c in Sources */ = {isa = PBXBuildFile; fileRef = 886BB2C2EC38C1112DFD88E4 /* unwind_test_harness.c */; };
+		8301AAF76D60EF74BC176A82 /* PLCrashHostInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CB3AA18EB0E50560AB5F26 /* PLCrashHostInfoTests.m */; };
+		84B0F90D48429EA7E782DAE4 /* PLCrashAsyncSymbolicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5ED72914546606349C523 /* PLCrashAsyncSymbolicationTests.m */; };
+		855749E9CECDF7F7753948D9 /* PLCrashLogWriterEncodingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C051335C7402E4AA2D1D04 /* PLCrashLogWriterEncodingTests.m */; };
+		85D5BFCD1F4FFAE78A1C2BE0 /* unwind_test_x86_frame.S in Sources */ = {isa = PBXBuildFile; fileRef = A8E52E39F32EF32449C5C7DA /* unwind_test_x86_frame.S */; };
+		870E56FB21D9C0998703DBC1 /* Backtrace_PLCrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41BBE4C52AE90ED564A5F0CA /* Backtrace_PLCrashReporter.framework */; };
+		8860AB5272D3E2075D272C6B /* unwind_test_x86_unusual.S in Sources */ = {isa = PBXBuildFile; fileRef = C5842D1C8D8C8927BF4B27CA /* unwind_test_x86_unusual.S */; };
+		88A391B81FAD59FBE118AD17 /* mach_exc_x86_64.h in Headers */ = {isa = PBXBuildFile; fileRef = 93D542C6CE88E942868761AE /* mach_exc_x86_64.h */; };
+		897892A1E724DC5E4C00B938 /* PLCrashMachExceptionPortSetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB87E36C6EF17B1A971336A /* PLCrashMachExceptionPortSetTests.m */; };
+		89AFC8C91741FA69263E4CC2 /* Backtrace_PLCrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E35E059AC79DCF21F5E4060B /* Backtrace_PLCrashReporter.framework */; };
+		8AAA8E91F8021A6E7C4A6879 /* PLCrashProcessInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE36C55809C3E77DC56F655 /* PLCrashProcessInfoTests.m */; };
+		8AB196F7BB18226D25CE53BD /* PLCrashAsyncLinkedListTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = D33C6AF1C201C16A6A5B3249 /* PLCrashAsyncLinkedListTests.mm */; };
+		8CA52D6D3FA8218E7D28BB8E /* unwind_test_arm.S in Sources */ = {isa = PBXBuildFile; fileRef = A8A68FAFC136A8D0E1A6CCF9 /* unwind_test_arm.S */; };
+		8D0431B936A09BAB94953EDD /* unwind_test_x86_64_frameless_big.S in Sources */ = {isa = PBXBuildFile; fileRef = 6338C1EBC7A951B8583C74C3 /* unwind_test_x86_64_frameless_big.S */; };
+		8D1429370BB35CB4875D5102 /* PLCrashAsyncObjCSectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE981230F748B1B13FE5ABC8 /* PLCrashAsyncObjCSectionTests.m */; };
+		8E9C2C776AEA03939A0246EE /* PLCrashAsyncDwarfEncodingTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = CABF694D1E3B353443DCD693 /* PLCrashAsyncDwarfEncodingTests.mm */; };
+		8F0F70ECD4C0E507B91AB156 /* unwind_test_arm64.S in Sources */ = {isa = PBXBuildFile; fileRef = CD79958F8184E76326FE2CBF /* unwind_test_arm64.S */; };
+		8F2C24C5032DE9F6DF5143DA /* unwind_test_x86_64_disable_compact_frame.S in Sources */ = {isa = PBXBuildFile; fileRef = 44ED13AB052E96A90C7C5062 /* unwind_test_x86_64_disable_compact_frame.S */; };
+		903FBEA4878B2CED9FB1426E /* PLCrashAsyncDwarfExpressionTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE89200D12E8CF48102A28AB /* PLCrashAsyncDwarfExpressionTests.mm */; };
+		911CB86A88012696E052A2B7 /* PLCrashAsyncImageListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF8B504A27C48E7CF5F1B1B /* PLCrashAsyncImageListTests.m */; };
+		92A1A86E08A0FE29B99046F0 /* unwind_test_x86_unusual.S in Sources */ = {isa = PBXBuildFile; fileRef = C5842D1C8D8C8927BF4B27CA /* unwind_test_x86_unusual.S */; };
+		9305481293A89719B92C22D8 /* PLCrashLogWriterEncodingTests.proto in Resources */ = {isa = PBXBuildFile; fileRef = FA582606DAB130F1254F4025 /* PLCrashLogWriterEncodingTests.proto */; };
+		93E51C765652AAD00360EBE9 /* unwind_test_x86_64_unusual.S in Sources */ = {isa = PBXBuildFile; fileRef = 2C9CA8DB7E9E3033C23A104D /* unwind_test_x86_64_unusual.S */; };
+		95087F2E08B876C49CD9A383 /* PLCrashAsyncCompactUnwindEncodingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AD44AAFA030E15E4A7C045 /* PLCrashAsyncCompactUnwindEncodingTests.m */; };
+		9703D34CFE6855C9C3CF3FB7 /* PLCrashFrameWalkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4328E072BF5E2D2EBB1E3B /* PLCrashFrameWalkerTests.m */; };
+		970C777F556BC476154F0179 /* unwind_test_x86.S in Sources */ = {isa = PBXBuildFile; fileRef = E5A876E15335F26A5B9F781C /* unwind_test_x86.S */; };
+		9870C9FE8DB2FBCF98FDD98D /* mach_exc_i386.h in Headers */ = {isa = PBXBuildFile; fileRef = 372AC58F2604F9646B0F52E1 /* mach_exc_i386.h */; };
+		99209D0781950E7AAE3C83E8 /* unwind_test_x86_64_frame.S in Sources */ = {isa = PBXBuildFile; fileRef = 3E93485C00E79F5567031290 /* unwind_test_x86_64_frame.S */; };
+		9D9E6A7BB356C675D54150C0 /* mach_exc_x86_64User.inc in Resources */ = {isa = PBXBuildFile; fileRef = FB70B6EBC721C175808D0A0D /* mach_exc_x86_64User.inc */; };
+		9EADD3133DCA159F8C7A90A0 /* PLCrashFrameDWARFUnwindTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA2B5D1A6DAC14C8713AC0C /* PLCrashFrameDWARFUnwindTests.m */; };
+		9F2446D610EBB87CEB848BEB /* unwind_test_x86_disable_compact_frame.S in Sources */ = {isa = PBXBuildFile; fileRef = 77C87EA0448C86BB5E1F4F39 /* unwind_test_x86_disable_compact_frame.S */; };
+		A0D5E93F317087EF6AAFEFB7 /* unwind_test_arm64_frame.S in Sources */ = {isa = PBXBuildFile; fileRef = 3418BAE068591B28138B2A22 /* unwind_test_arm64_frame.S */; };
+		A11991D672E041D038BCFE2E /* PLCrashReport.proto in Resources */ = {isa = PBXBuildFile; fileRef = BB003303E852983AA72ADE4E /* PLCrashReport.proto */; };
+		A18CC8E2FB9FC1293E46AC8F /* PLCrashLogWriterEncodingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C051335C7402E4AA2D1D04 /* PLCrashLogWriterEncodingTests.m */; };
+		A238050F9BB3904C39A5307A /* PLCrashFrameCompactUnwindTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 860E3BB18156C290579C4528 /* PLCrashFrameCompactUnwindTests.m */; };
+		A43D01CF5AD0597570FD63A2 /* PLCrashAsyncDwarfEncodingTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = CABF694D1E3B353443DCD693 /* PLCrashAsyncDwarfEncodingTests.mm */; };
+		A4FF2566BCCA479997B1A674 /* PLCrashAsyncDwarfCIETests.mm in Sources */ = {isa = PBXBuildFile; fileRef = C0FBE5950F0D0E46C61056B0 /* PLCrashAsyncDwarfCIETests.mm */; };
+		A74E86C3472F4738E05CC421 /* unwind_test_x86_frameless_big.S in Sources */ = {isa = PBXBuildFile; fileRef = 9F361F526146346F40966CBB /* unwind_test_x86_frameless_big.S */; };
+		A7B3979F0C9B15F989039BC1 /* PLCrashTestThreadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56439D2DD0180B482CC51218 /* PLCrashTestThreadTests.m */; };
+		A7CF506D6C786DEBABAFF902 /* PLCrashAsyncMObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF118306F8266F1DD09DF1EB /* PLCrashAsyncMObjectTests.m */; };
+		A86BFD08FDAD715DA0B6F7C9 /* PLCrashReportTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2CA938841627CDBAE795F4 /* PLCrashReportTests.m */; };
+		AB925F07310837C6B28FDA46 /* mach_exc.h in Headers */ = {isa = PBXBuildFile; fileRef = A359D25DC7CEC3D8E0D72EC4 /* mach_exc.h */; };
+		ABBD2C01DE7613256116B2CE /* unwind_test_arm64_frameless.S in Sources */ = {isa = PBXBuildFile; fileRef = 9DC26D29F9EB49E8D6327C00 /* unwind_test_arm64_frameless.S */; };
+		ABD94AB54B305EBE019FC4A4 /* PLCrashAsyncSignalInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A62CD6EF6261D13AFF749F98 /* PLCrashAsyncSignalInfoTests.m */; };
+		AE71F1D1F628957F52C20052 /* PLCrashReporterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B90D439683B696C30428034D /* PLCrashReporterTests.m */; };
+		AE7ED719CC11FB1C4B81359E /* unwind_test_x86_64.S in Sources */ = {isa = PBXBuildFile; fileRef = 20F7011B3C5B2F36F41CF431 /* unwind_test_x86_64.S */; };
+		AFCA7372DBA0B11774E5227C /* PLCrashAsyncObjCSectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE981230F748B1B13FE5ABC8 /* PLCrashAsyncObjCSectionTests.m */; };
+		B49B53E8CD3D300339C7DDA1 /* PLCrashUncaughtExceptionHandlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE23D020690F8D441B0D21A /* PLCrashUncaughtExceptionHandlerTests.m */; };
+		B4B322B79ADFF91CF872AC16 /* PLCrashAsyncMachOStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8996E273B78204363F77424 /* PLCrashAsyncMachOStringTests.m */; };
+		B5C20FCF4C1E4F570AACEAD5 /* PLCrashLogWriterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A886DB4C473B4A7791FE57 /* PLCrashLogWriterTests.m */; };
+		B64C83FA503DD808C2AD4740 /* PLCrashLogWriterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A886DB4C473B4A7791FE57 /* PLCrashLogWriterTests.m */; };
+		B64C9AE353489E5A37DCA12A /* PLCrashAsyncDwarfPrimitivesTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9F53EA8140AEA6C5E9BE075A /* PLCrashAsyncDwarfPrimitivesTests.mm */; };
+		B8753C815CF1A85A30BA936C /* PLCrashAsyncImageListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF8B504A27C48E7CF5F1B1B /* PLCrashAsyncImageListTests.m */; };
+		B9B8BF17A8BE0329119D3F26 /* unwind_test_x86_64_unusual.S in Sources */ = {isa = PBXBuildFile; fileRef = 2C9CA8DB7E9E3033C23A104D /* unwind_test_x86_64_unusual.S */; };
+		BA108CA8F6EF34712FB71B46 /* PLCrashAsyncTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CA93EAA359EA3B2A4AB08E /* PLCrashAsyncTests.m */; };
+		BD968C6A7AB078527EC08875 /* Backtrace_PLCrashReporter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E35E059AC79DCF21F5E4060B /* Backtrace_PLCrashReporter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE9D2C8462B1E24895A51549 /* unwind_test_arm64.S in Sources */ = {isa = PBXBuildFile; fileRef = CD79958F8184E76326FE2CBF /* unwind_test_arm64.S */; };
+		BF9EEB844065C8936E51840A /* PLCrashMachExceptionServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 395F299D32F64E7D9A8B9FAE /* PLCrashMachExceptionServerTests.m */; };
+		BFEFF936C0632D21C3048907 /* PLCrashAsyncDwarfCIETests.mm in Sources */ = {isa = PBXBuildFile; fileRef = C0FBE5950F0D0E46C61056B0 /* PLCrashAsyncDwarfCIETests.mm */; };
+		C067D8479C272624E18E4887 /* unwind_test_arm.S in Sources */ = {isa = PBXBuildFile; fileRef = A8A68FAFC136A8D0E1A6CCF9 /* unwind_test_arm.S */; };
+		C0A723E501991E9F43A96B54 /* mach_exc_i386.h in Headers */ = {isa = PBXBuildFile; fileRef = 372AC58F2604F9646B0F52E1 /* mach_exc_i386.h */; };
+		C19DB19F28A4475EAC5F00CF /* unwind_test_arm64_frame.S in Sources */ = {isa = PBXBuildFile; fileRef = 3418BAE068591B28138B2A22 /* unwind_test_arm64_frame.S */; };
+		C481CCC7034CC32D9A133746 /* Tests in Resources */ = {isa = PBXBuildFile; fileRef = F5CB1C5C437543B45EF3910F /* Tests */; };
+		C834A77EE25406C3F5D5EB05 /* PLCrashTestThreadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56439D2DD0180B482CC51218 /* PLCrashTestThreadTests.m */; };
+		C8B96A87F529331E5C1EBABC /* PLCrashSysctlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B934B7D93ED027587B1F16 /* PLCrashSysctlTests.m */; };
+		CA7ABA5281917BF7229F01AD /* dwarf_opstream_tests.mm in Sources */ = {isa = PBXBuildFile; fileRef = EC99C9E9C9CA3E877961005F /* dwarf_opstream_tests.mm */; };
+		CD0709CE80169DF82D7D97DD /* mach_exc_i386.h in Headers */ = {isa = PBXBuildFile; fileRef = 372AC58F2604F9646B0F52E1 /* mach_exc_i386.h */; };
+		CD1674BBD915BAA90A1F3F50 /* mach_exc_x86_64.h in Headers */ = {isa = PBXBuildFile; fileRef = 93D542C6CE88E942868761AE /* mach_exc_x86_64.h */; };
+		CE5049CE83AEDDBCC3B5365F /* PLCrashReporterNSErrorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D3B37FE451188182D16E3E /* PLCrashReporterNSErrorTests.m */; };
+		CE8EC4CC65CCFB9A87BE3692 /* unwind_test_harness.c in Sources */ = {isa = PBXBuildFile; fileRef = 886BB2C2EC38C1112DFD88E4 /* unwind_test_harness.c */; };
+		CF3B543DC20A10DBBC9774CA /* unwind_test_x86_64_frameless.S in Sources */ = {isa = PBXBuildFile; fileRef = DAC6644CAAA2716FCCC6EEDA /* unwind_test_x86_64_frameless.S */; };
+		CF545018B96FE4CEE5E0E0CE /* mach_exc.c in Sources */ = {isa = PBXBuildFile; fileRef = 327D3DA28C7F23F891BDA7DB /* mach_exc.c */; };
+		CF8163B8851D762324117B3E /* PLCrashAsyncMachOStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8996E273B78204363F77424 /* PLCrashAsyncMachOStringTests.m */; };
+		CFE6B0429153C2B81C303003 /* PLCrashFrameWalkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4328E072BF5E2D2EBB1E3B /* PLCrashFrameWalkerTests.m */; };
+		CFFF39936AEBB5A795A7F3FC /* PLCrashTestThread.m in Sources */ = {isa = PBXBuildFile; fileRef = E1349589B7737413F56D7668 /* PLCrashTestThread.m */; };
+		D0807993E765BC7C62C8742C /* mach_exc_x86_64.h in Headers */ = {isa = PBXBuildFile; fileRef = 93D542C6CE88E942868761AE /* mach_exc_x86_64.h */; };
+		D21A95AB3FB96C26B0EDD5DA /* PLCrashLogWriterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A886DB4C473B4A7791FE57 /* PLCrashLogWriterTests.m */; };
+		D50FE49C6FBA36C963ABAD45 /* mach_exc.h in Headers */ = {isa = PBXBuildFile; fileRef = A359D25DC7CEC3D8E0D72EC4 /* mach_exc.h */; };
+		D67132EF96374BC0DF6748E4 /* PLCrashLogWriterEncodingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C051335C7402E4AA2D1D04 /* PLCrashLogWriterEncodingTests.m */; };
+		D6AA1EF87A89B4EC64B79E10 /* PLCrashAsyncDwarfPrimitivesTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9F53EA8140AEA6C5E9BE075A /* PLCrashAsyncDwarfPrimitivesTests.mm */; };
+		D6C548622850AB9200937004 /* PLCrashNamespace.h in Headers */ = {isa = PBXBuildFile; fileRef = D6C548612850AB9200937004 /* PLCrashNamespace.h */; };
+		D6C548652850ABC200937004 /* PLCrashReporterConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = D6C548632850ABC200937004 /* PLCrashReporterConfig.h */; };
+		D6C548662850ABC200937004 /* PLCrashFeatureConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = D6C548642850ABC200937004 /* PLCrashFeatureConfig.h */; };
+		D7B8D94C7B9C5B88E84D0114 /* unwind_test_x86_frameless.S in Sources */ = {isa = PBXBuildFile; fileRef = 9558314A7A7CF1E898DF0487 /* unwind_test_x86_frameless.S */; };
+		D806C8B02AFA622E019EA31F /* PLCrashAsyncDwarfExpressionTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE89200D12E8CF48102A28AB /* PLCrashAsyncDwarfExpressionTests.mm */; };
+		D8200902DB8448E679B3454D /* PLCrashAsyncDwarfEncodingTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = CABF694D1E3B353443DCD693 /* PLCrashAsyncDwarfEncodingTests.mm */; };
+		D9B2BD7A14E8C43D98A16A20 /* PLCrashReporterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B90D439683B696C30428034D /* PLCrashReporterTests.m */; };
+		DB29FC365231CE01D8829733 /* mach_exc_i386User.inc in Resources */ = {isa = PBXBuildFile; fileRef = D3EAA5AC022A17697D3DE867 /* mach_exc_i386User.inc */; };
+		DB7A88088508F6C6A67AC045 /* PLCrashAsyncDwarfFDETests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D2184206BCE212E847837E7 /* PLCrashAsyncDwarfFDETests.mm */; };
+		DC606F6E5FEACBD7BED6BDD1 /* PLCrashAsyncImageListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF8B504A27C48E7CF5F1B1B /* PLCrashAsyncImageListTests.m */; };
+		DE78A6D065636EA7B78BE9AD /* PLCrashAsyncMachOImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9014AABC53A5A801823282D4 /* PLCrashAsyncMachOImageTests.m */; };
+		E02129E6191F76FABB2DAACC /* PLCrashFrameWalkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4328E072BF5E2D2EBB1E3B /* PLCrashFrameWalkerTests.m */; };
+		E0290EA94BB05465FF513A89 /* PLCrashAsyncDwarfCFAStateTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D60FB32E06E707E0227BA17 /* PLCrashAsyncDwarfCFAStateTests.mm */; };
+		E1BE8BCFD0DA67A03F8B4C09 /* PLCrashAsyncDwarfCIETests.mm in Sources */ = {isa = PBXBuildFile; fileRef = C0FBE5950F0D0E46C61056B0 /* PLCrashAsyncDwarfCIETests.mm */; };
+		E3254F9B137F6725B892450E /* PLCrashAsyncObjCSectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE981230F748B1B13FE5ABC8 /* PLCrashAsyncObjCSectionTests.m */; };
+		E35C4162B900F86A12A164FE /* PLCrashAsyncDwarfCFAStateTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D60FB32E06E707E0227BA17 /* PLCrashAsyncDwarfCFAStateTests.mm */; };
+		E39D774229A92CC24A3815D5 /* PLCrashMachExceptionPortSetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB87E36C6EF17B1A971336A /* PLCrashMachExceptionPortSetTests.m */; };
+		E40806E90197BDFE2DC4183B /* unwind_test_x86_disable_compact_frame.S in Sources */ = {isa = PBXBuildFile; fileRef = 77C87EA0448C86BB5E1F4F39 /* unwind_test_x86_disable_compact_frame.S */; };
+		E4AA0B094F75AA5148FFA886 /* PLCrashAsyncSymbolicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5ED72914546606349C523 /* PLCrashAsyncSymbolicationTests.m */; };
+		E57C92F72CDF7C9FD12D338C /* unwind_test_arm64_frameless.S in Sources */ = {isa = PBXBuildFile; fileRef = 9DC26D29F9EB49E8D6327C00 /* unwind_test_arm64_frameless.S */; };
+		E65A6A888794C1430BB615F3 /* PLCrashAsyncMachExceptionInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87119412D70872CEBC1E78F2 /* PLCrashAsyncMachExceptionInfoTests.m */; };
+		E6D801BF41870B0D6C2DE0CD /* PLCrashReporterNSErrorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D3B37FE451188182D16E3E /* PLCrashReporterNSErrorTests.m */; };
+		E97246462CA632395B04EC93 /* Tests in Resources */ = {isa = PBXBuildFile; fileRef = F5CB1C5C437543B45EF3910F /* Tests */; };
+		EA1C9CB9A446BCE367DE43C5 /* PLCrashAsyncTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CA93EAA359EA3B2A4AB08E /* PLCrashAsyncTests.m */; };
+		ECB38C6482B9D22027F1C563 /* PLCrashMachExceptionPortSetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB87E36C6EF17B1A971336A /* PLCrashMachExceptionPortSetTests.m */; };
+		EEBB0B8B1CB86F89D9675314 /* protobuf-c.h in Headers */ = {isa = PBXBuildFile; fileRef = 83265C16E75798F82A3A6A61 /* protobuf-c.h */; };
+		EF26863087213F65CE7C35EB /* PLCrashTestThread.m in Sources */ = {isa = PBXBuildFile; fileRef = E1349589B7737413F56D7668 /* PLCrashTestThread.m */; };
+		F0A1AF1B27EEC7C244E34CAC /* unwind_test_harness.c in Sources */ = {isa = PBXBuildFile; fileRef = 886BB2C2EC38C1112DFD88E4 /* unwind_test_harness.c */; };
+		F17308EDE966838E775DB288 /* PLCrashTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A1EB4E187E5335D5F06BD7 /* PLCrashTestCase.m */; };
+		F2113812370412B1D80E3E71 /* Backtrace_PLCrashReporter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41BBE4C52AE90ED564A5F0CA /* Backtrace_PLCrashReporter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F37B8D14B79455C577084954 /* PLCrashUncaughtExceptionHandlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE23D020690F8D441B0D21A /* PLCrashUncaughtExceptionHandlerTests.m */; };
+		F3EA21AE2909CC05D62056CE /* unwind_test_x86_frame.S in Sources */ = {isa = PBXBuildFile; fileRef = A8E52E39F32EF32449C5C7DA /* unwind_test_x86_frame.S */; };
+		F454FC2141FC9D12A774EC45 /* PLCrashAsyncDwarfCFAStateEvaluationTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F0DF0E516FFF138A4BB2BC /* PLCrashAsyncDwarfCFAStateEvaluationTests.mm */; };
+		F5C0C6247BA6B82D71E4F1AB /* unwind_test_x86_64_frame.S in Sources */ = {isa = PBXBuildFile; fileRef = 3E93485C00E79F5567031290 /* unwind_test_x86_64_frame.S */; };
+		F7E958BC86C778AF7BC0686E /* dwarf_stack_tests.mm in Sources */ = {isa = PBXBuildFile; fileRef = DE319FC057861F94EC2125C0 /* dwarf_stack_tests.mm */; };
+		FA477A33AF8551927603C0E7 /* PLCrashTestThread.m in Sources */ = {isa = PBXBuildFile; fileRef = E1349589B7737413F56D7668 /* PLCrashTestThread.m */; };
+		FB10408CC38122C920547293 /* PLCrashProcessInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE36C55809C3E77DC56F655 /* PLCrashProcessInfoTests.m */; };
+		FCCFB7ED933E760718694A27 /* PLCrashTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A1EB4E187E5335D5F06BD7 /* PLCrashTestCase.m */; };
+		FE75C748FA24B451543C7515 /* unwind_test_arm.S in Sources */ = {isa = PBXBuildFile; fileRef = A8A68FAFC136A8D0E1A6CCF9 /* unwind_test_arm.S */; };
+		FF67359E6EEA5CAF93B6EC3D /* PLCrashAsyncLinkedListTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = D33C6AF1C201C16A6A5B3249 /* PLCrashAsyncLinkedListTests.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05D414196CE681455A72A668 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 600A194F3DEADA07A32AF819 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D653B74082707D254EBEA806;
+			remoteInfo = "CrashReporter-macOS";
+		};
+		ED36357AD94EB0456BF3F420 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 600A194F3DEADA07A32AF819 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 682FE9D4250D4B9E47C36676;
+			remoteInfo = "CrashReporter-tvOS";
+		};
+		F23CDD4CAEBF712638D301BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 600A194F3DEADA07A32AF819 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D889625960590A2FBE1376A;
+			remoteInfo = "CrashReporter-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1E6BEBCCFC616DDAFE42A2A5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BD968C6A7AB078527EC08875 /* Backtrace_PLCrashReporter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9777084F0896E85E054207C4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7145813DBE406D7F5A377BDA /* Backtrace_PLCrashReporter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBFFBD99449DBD87A1AE358 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F2113812370412B1D80E3E71 /* Backtrace_PLCrashReporter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0BE36C55809C3E77DC56F655 /* PLCrashProcessInfoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashProcessInfoTests.m; sourceTree = "<group>"; };
+		0C2693B3132C82CCE2AE8ECC /* PLCrashSignalHandlerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashSignalHandlerTests.m; sourceTree = "<group>"; };
+		10C051335C7402E4AA2D1D04 /* PLCrashLogWriterEncodingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashLogWriterEncodingTests.m; sourceTree = "<group>"; };
+		1D2184206BCE212E847837E7 /* PLCrashAsyncDwarfFDETests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PLCrashAsyncDwarfFDETests.mm; sourceTree = "<group>"; };
+		20F7011B3C5B2F36F41CF431 /* unwind_test_x86_64.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = unwind_test_x86_64.S; sourceTree = "<group>"; };
+		2ADB1AF59EB5340ABCF570B1 /* unwind_test_harness.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = unwind_test_harness.h; sourceTree = "<group>"; };
+		2C9CA8DB7E9E3033C23A104D /* unwind_test_x86_64_unusual.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = unwind_test_x86_64_unusual.S; sourceTree = "<group>"; };
+		2CA2B5D1A6DAC14C8713AC0C /* PLCrashFrameDWARFUnwindTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashFrameDWARFUnwindTests.m; sourceTree = "<group>"; };
+		327D3DA28C7F23F891BDA7DB /* mach_exc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mach_exc.c; sourceTree = "<group>"; };
+		3418BAE068591B28138B2A22 /* unwind_test_arm64_frame.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = unwind_test_arm64_frame.S; sourceTree = "<group>"; };
+		350EC42322E2607234CF1A50 /* SenTestCompat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SenTestCompat.h; sourceTree = "<group>"; };
+		36CA93EAA359EA3B2A4AB08E /* PLCrashAsyncTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashAsyncTests.m; sourceTree = "<group>"; };
+		372AC58F2604F9646B0F52E1 /* mach_exc_i386.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mach_exc_i386.h; sourceTree = "<group>"; };
+		395F299D32F64E7D9A8B9FAE /* PLCrashMachExceptionServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashMachExceptionServerTests.m; sourceTree = "<group>"; };
+		3D60FB32E06E707E0227BA17 /* PLCrashAsyncDwarfCFAStateTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PLCrashAsyncDwarfCFAStateTests.mm; sourceTree = "<group>"; };
+		3E93485C00E79F5567031290 /* unwind_test_x86_64_frame.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = unwind_test_x86_64_frame.S; sourceTree = "<group>"; };
+		41BBE4C52AE90ED564A5F0CA /* Backtrace_PLCrashReporter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Backtrace_PLCrashReporter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44ED13AB052E96A90C7C5062 /* unwind_test_x86_64_disable_compact_frame.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = unwind_test_x86_64_disable_compact_frame.S; sourceTree = "<group>"; };
+		49AD44AAFA030E15E4A7C045 /* PLCrashAsyncCompactUnwindEncodingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashAsyncCompactUnwindEncodingTests.m; sourceTree = "<group>"; };
+		4CEEC77A1ADDD9437B074F89 /* PLCrashLogWriterEncodingTests.pb-c.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PLCrashLogWriterEncodingTests.pb-c.h"; sourceTree = "<group>"; };
+		4D9050C867B9070DEA68FC24 /* PLCrashTestThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLCrashTestThread.h; sourceTree = "<group>"; };
+		51B934B7D93ED027587B1F16 /* PLCrashSysctlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashSysctlTests.m; sourceTree = "<group>"; };
+		5443B0E417C108F8BA129EF8 /* Backtrace_PLCrashReporter.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Backtrace_PLCrashReporter.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56439D2DD0180B482CC51218 /* PLCrashTestThreadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashTestThreadTests.m; sourceTree = "<group>"; };
+		6338C1EBC7A951B8583C74C3 /* unwind_test_x86_64_frameless_big.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = unwind_test_x86_64_frameless_big.S; sourceTree = "<group>"; };
+		63CB3AA18EB0E50560AB5F26 /* PLCrashHostInfoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashHostInfoTests.m; sourceTree = "<group>"; };
+		66C3C58F6C22ABD6160C80A7 /* PLCrashFrameStackUnwindTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashFrameStackUnwindTests.m; sourceTree = "<group>"; };
+		6B049BC836ABBCBD0E0351DA /* Backtrace_PLCrashReporter.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Backtrace_PLCrashReporter.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F4F3E354AA5E0F270FE8E09 /* PLCrashAsyncThreadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashAsyncThreadTests.m; sourceTree = "<group>"; };
+		70A886DB4C473B4A7791FE57 /* PLCrashLogWriterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashLogWriterTests.m; sourceTree = "<group>"; };
+		72A1EB4E187E5335D5F06BD7 /* PLCrashTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashTestCase.m; sourceTree = "<group>"; };
+		739E80987E253344CFCD6C61 /* Backtrace_PLCrashReporter.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Backtrace_PLCrashReporter.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77C87EA0448C86BB5E1F4F39 /* unwind_test_x86_disable_compact_frame.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = unwind_test_x86_disable_compact_frame.S; sourceTree = "<group>"; };
+		77F05D421BDE5A3B3C127578 /* PLCrashLogWriterEncodingTests.pb-c.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "PLCrashLogWriterEncodingTests.pb-c.c"; sourceTree = "<group>"; };
+		7895116DD1616F66A0776A3E /* PLCrashTestCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLCrashTestCase.h; sourceTree = "<group>"; };
+		7CC5ED72914546606349C523 /* PLCrashAsyncSymbolicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashAsyncSymbolicationTests.m; sourceTree = "<group>"; };
+		7CE23D020690F8D441B0D21A /* PLCrashUncaughtExceptionHandlerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashUncaughtExceptionHandlerTests.m; sourceTree = "<group>"; };
+		83265C16E75798F82A3A6A61 /* protobuf-c.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "protobuf-c.h"; sourceTree = "<group>"; };
+		860E3BB18156C290579C4528 /* PLCrashFrameCompactUnwindTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashFrameCompactUnwindTests.m; sourceTree = "<group>"; };
+		87119412D70872CEBC1E78F2 /* PLCrashAsyncMachExceptionInfoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashAsyncMachExceptionInfoTests.m; sourceTree = "<group>"; };
+		886BB2C2EC38C1112DFD88E4 /* unwind_test_harness.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = unwind_test_harness.c; sourceTree = "<group>"; };
+		9014AABC53A5A801823282D4 /* PLCrashAsyncMachOImageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashAsyncMachOImageTests.m; sourceTree = "<group>"; };
+		93D542C6CE88E942868761AE /* mach_exc_x86_64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mach_exc_x86_64.h; sourceTree = "<group>"; };
+		9558314A7A7CF1E898DF0487 /* unwind_test_x86_frameless.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = unwind_test_x86_frameless.S; sourceTree = "<group>"; };
+		99D3B37FE451188182D16E3E /* PLCrashReporterNSErrorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashReporterNSErrorTests.m; sourceTree = "<group>"; };
+		9DC26D29F9EB49E8D6327C00 /* unwind_test_arm64_frameless.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = unwind_test_arm64_frameless.S; sourceTree = "<group>"; };
+		9F361F526146346F40966CBB /* unwind_test_x86_frameless_big.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = unwind_test_x86_frameless_big.S; sourceTree = "<group>"; };
+		9F53EA8140AEA6C5E9BE075A /* PLCrashAsyncDwarfPrimitivesTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PLCrashAsyncDwarfPrimitivesTests.mm; sourceTree = "<group>"; };
+		A359D25DC7CEC3D8E0D72EC4 /* mach_exc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mach_exc.h; sourceTree = "<group>"; };
+		A62CD6EF6261D13AFF749F98 /* PLCrashAsyncSignalInfoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashAsyncSignalInfoTests.m; sourceTree = "<group>"; };
+		A8A68FAFC136A8D0E1A6CCF9 /* unwind_test_arm.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = unwind_test_arm.S; sourceTree = "<group>"; };
+		A8E52E39F32EF32449C5C7DA /* unwind_test_x86_frame.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = unwind_test_x86_frame.S; sourceTree = "<group>"; };
+		ABA4439096CC3B223923A433 /* protobuf-c.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "protobuf-c.c"; sourceTree = "<group>"; };
+		AE89200D12E8CF48102A28AB /* PLCrashAsyncDwarfExpressionTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PLCrashAsyncDwarfExpressionTests.mm; sourceTree = "<group>"; };
+		B5F0DF0E516FFF138A4BB2BC /* PLCrashAsyncDwarfCFAStateEvaluationTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PLCrashAsyncDwarfCFAStateEvaluationTests.mm; sourceTree = "<group>"; };
+		B8996E273B78204363F77424 /* PLCrashAsyncMachOStringTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashAsyncMachOStringTests.m; sourceTree = "<group>"; };
+		B90D439683B696C30428034D /* PLCrashReporterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashReporterTests.m; sourceTree = "<group>"; };
+		BB003303E852983AA72ADE4E /* PLCrashReport.proto */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.protobuf; path = PLCrashReport.proto; sourceTree = "<group>"; };
+		C0FBE5950F0D0E46C61056B0 /* PLCrashAsyncDwarfCIETests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PLCrashAsyncDwarfCIETests.mm; sourceTree = "<group>"; };
+		C5842D1C8D8C8927BF4B27CA /* unwind_test_x86_unusual.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = unwind_test_x86_unusual.S; sourceTree = "<group>"; };
+		CABF694D1E3B353443DCD693 /* PLCrashAsyncDwarfEncodingTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PLCrashAsyncDwarfEncodingTests.mm; sourceTree = "<group>"; };
+		CD79958F8184E76326FE2CBF /* unwind_test_arm64.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = unwind_test_arm64.S; sourceTree = "<group>"; };
+		D27C026B759C888A568802FE /* Backtrace_PLCrashReporter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Backtrace_PLCrashReporter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D33C6AF1C201C16A6A5B3249 /* PLCrashAsyncLinkedListTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PLCrashAsyncLinkedListTests.mm; sourceTree = "<group>"; };
+		D3EAA5AC022A17697D3DE867 /* mach_exc_i386User.inc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = mach_exc_i386User.inc; sourceTree = "<group>"; };
+		D6C548612850AB9200937004 /* PLCrashNamespace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashNamespace.h; sourceTree = "<group>"; };
+		D6C548632850ABC200937004 /* PLCrashReporterConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReporterConfig.h; sourceTree = "<group>"; };
+		D6C548642850ABC200937004 /* PLCrashFeatureConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashFeatureConfig.h; sourceTree = "<group>"; };
+		DA4328E072BF5E2D2EBB1E3B /* PLCrashFrameWalkerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashFrameWalkerTests.m; sourceTree = "<group>"; };
+		DA9601BCC382A36234E96B5E /* dwarf_encoding_test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dwarf_encoding_test.h; sourceTree = "<group>"; };
+		DAC6644CAAA2716FCCC6EEDA /* unwind_test_x86_64_frameless.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = unwind_test_x86_64_frameless.S; sourceTree = "<group>"; };
+		DE319FC057861F94EC2125C0 /* dwarf_stack_tests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = dwarf_stack_tests.mm; sourceTree = "<group>"; };
+		DF118306F8266F1DD09DF1EB /* PLCrashAsyncMObjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashAsyncMObjectTests.m; sourceTree = "<group>"; };
+		E1349589B7737413F56D7668 /* PLCrashTestThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashTestThread.m; sourceTree = "<group>"; };
+		E22244CF324B60BE96FB94AB /* PLCrashMachExceptionPortTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashMachExceptionPortTests.m; sourceTree = "<group>"; };
+		E35E059AC79DCF21F5E4060B /* Backtrace_PLCrashReporter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Backtrace_PLCrashReporter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5A876E15335F26A5B9F781C /* unwind_test_x86.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = unwind_test_x86.S; sourceTree = "<group>"; };
+		EC99C9E9C9CA3E877961005F /* dwarf_opstream_tests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = dwarf_opstream_tests.mm; sourceTree = "<group>"; };
+		EE2CA938841627CDBAE795F4 /* PLCrashReportTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashReportTests.m; sourceTree = "<group>"; };
+		EEF8B504A27C48E7CF5F1B1B /* PLCrashAsyncImageListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashAsyncImageListTests.m; sourceTree = "<group>"; };
+		F5CB1C5C437543B45EF3910F /* Tests */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Tests; path = Resources/Tests; sourceTree = SOURCE_ROOT; };
+		FA582606DAB130F1254F4025 /* PLCrashLogWriterEncodingTests.proto */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.protobuf; path = PLCrashLogWriterEncodingTests.proto; sourceTree = "<group>"; };
+		FB70B6EBC721C175808D0A0D /* mach_exc_x86_64User.inc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = mach_exc_x86_64User.inc; sourceTree = "<group>"; };
+		FCB87E36C6EF17B1A971336A /* PLCrashMachExceptionPortSetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashMachExceptionPortSetTests.m; sourceTree = "<group>"; };
+		FE981230F748B1B13FE5ABC8 /* PLCrashAsyncObjCSectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCrashAsyncObjCSectionTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05F927CE6EAA539B30EFE1D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				870E56FB21D9C0998703DBC1 /* Backtrace_PLCrashReporter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17B0BE1B4894FD4A685AC468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E533520D2A7EE7D3EAAF674 /* Backtrace_PLCrashReporter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD4392A7295FDC2B91CCFDA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89AFC8C91741FA69263E4CC2 /* Backtrace_PLCrashReporter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D7F05E66E0786B4A2B0AE57 = {
+			isa = PBXGroup;
+			children = (
+				F5CB1C5C437543B45EF3910F /* Tests */,
+				1D8B6511BD17ACDA6B83B158 /* protobuf-c */,
+				DBEF5AF0A4F86260F2993B2C /* Sources */,
+				EABC71BE846760CD55CF1155 /* Tests */,
+				496079D3964898318634A76F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19354812FD26D7999FB4DA78 /* Autogenerated */ = {
+			isa = PBXGroup;
+			children = (
+				372AC58F2604F9646B0F52E1 /* mach_exc_i386.h */,
+				D3EAA5AC022A17697D3DE867 /* mach_exc_i386User.inc */,
+				93D542C6CE88E942868761AE /* mach_exc_x86_64.h */,
+				FB70B6EBC721C175808D0A0D /* mach_exc_x86_64User.inc */,
+				327D3DA28C7F23F891BDA7DB /* mach_exc.c */,
+				A359D25DC7CEC3D8E0D72EC4 /* mach_exc.h */,
+				BB003303E852983AA72ADE4E /* PLCrashReport.proto */,
+			);
+			path = Autogenerated;
+			sourceTree = "<group>";
+		};
+		1D8B6511BD17ACDA6B83B158 /* protobuf-c */ = {
+			isa = PBXGroup;
+			children = (
+				ABA4439096CC3B223923A433 /* protobuf-c.c */,
+				83265C16E75798F82A3A6A61 /* protobuf-c.h */,
+			);
+			name = "protobuf-c";
+			path = "Dependencies/protobuf-c/protobuf-c";
+			sourceTree = "<group>";
+		};
+		25DB156E9678B7466BE91E45 /* Libunwind Regression Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A8A68FAFC136A8D0E1A6CCF9 /* unwind_test_arm.S */,
+				3418BAE068591B28138B2A22 /* unwind_test_arm64_frame.S */,
+				9DC26D29F9EB49E8D6327C00 /* unwind_test_arm64_frameless.S */,
+				CD79958F8184E76326FE2CBF /* unwind_test_arm64.S */,
+				886BB2C2EC38C1112DFD88E4 /* unwind_test_harness.c */,
+				2ADB1AF59EB5340ABCF570B1 /* unwind_test_harness.h */,
+				44ED13AB052E96A90C7C5062 /* unwind_test_x86_64_disable_compact_frame.S */,
+				3E93485C00E79F5567031290 /* unwind_test_x86_64_frame.S */,
+				6338C1EBC7A951B8583C74C3 /* unwind_test_x86_64_frameless_big.S */,
+				DAC6644CAAA2716FCCC6EEDA /* unwind_test_x86_64_frameless.S */,
+				2C9CA8DB7E9E3033C23A104D /* unwind_test_x86_64_unusual.S */,
+				20F7011B3C5B2F36F41CF431 /* unwind_test_x86_64.S */,
+				77C87EA0448C86BB5E1F4F39 /* unwind_test_x86_disable_compact_frame.S */,
+				A8E52E39F32EF32449C5C7DA /* unwind_test_x86_frame.S */,
+				9F361F526146346F40966CBB /* unwind_test_x86_frameless_big.S */,
+				9558314A7A7CF1E898DF0487 /* unwind_test_x86_frameless.S */,
+				C5842D1C8D8C8927BF4B27CA /* unwind_test_x86_unusual.S */,
+				E5A876E15335F26A5B9F781C /* unwind_test_x86.S */,
+			);
+			path = "Libunwind Regression Tests";
+			sourceTree = "<group>";
+		};
+		496079D3964898318634A76F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E35E059AC79DCF21F5E4060B /* Backtrace_PLCrashReporter.framework */,
+				739E80987E253344CFCD6C61 /* Backtrace_PLCrashReporter.xctest */,
+				41BBE4C52AE90ED564A5F0CA /* Backtrace_PLCrashReporter.framework */,
+				6B049BC836ABBCBD0E0351DA /* Backtrace_PLCrashReporter.xctest */,
+				D27C026B759C888A568802FE /* Backtrace_PLCrashReporter.framework */,
+				5443B0E417C108F8BA129EF8 /* Backtrace_PLCrashReporter.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBEF5AF0A4F86260F2993B2C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D6C548642850ABC200937004 /* PLCrashFeatureConfig.h */,
+				D6C548632850ABC200937004 /* PLCrashReporterConfig.h */,
+				D6C548612850AB9200937004 /* PLCrashNamespace.h */,
+				19354812FD26D7999FB4DA78 /* Autogenerated */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EABC71BE846760CD55CF1155 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DA9601BCC382A36234E96B5E /* dwarf_encoding_test.h */,
+				EC99C9E9C9CA3E877961005F /* dwarf_opstream_tests.mm */,
+				DE319FC057861F94EC2125C0 /* dwarf_stack_tests.mm */,
+				49AD44AAFA030E15E4A7C045 /* PLCrashAsyncCompactUnwindEncodingTests.m */,
+				B5F0DF0E516FFF138A4BB2BC /* PLCrashAsyncDwarfCFAStateEvaluationTests.mm */,
+				3D60FB32E06E707E0227BA17 /* PLCrashAsyncDwarfCFAStateTests.mm */,
+				C0FBE5950F0D0E46C61056B0 /* PLCrashAsyncDwarfCIETests.mm */,
+				CABF694D1E3B353443DCD693 /* PLCrashAsyncDwarfEncodingTests.mm */,
+				AE89200D12E8CF48102A28AB /* PLCrashAsyncDwarfExpressionTests.mm */,
+				1D2184206BCE212E847837E7 /* PLCrashAsyncDwarfFDETests.mm */,
+				9F53EA8140AEA6C5E9BE075A /* PLCrashAsyncDwarfPrimitivesTests.mm */,
+				EEF8B504A27C48E7CF5F1B1B /* PLCrashAsyncImageListTests.m */,
+				D33C6AF1C201C16A6A5B3249 /* PLCrashAsyncLinkedListTests.mm */,
+				87119412D70872CEBC1E78F2 /* PLCrashAsyncMachExceptionInfoTests.m */,
+				9014AABC53A5A801823282D4 /* PLCrashAsyncMachOImageTests.m */,
+				B8996E273B78204363F77424 /* PLCrashAsyncMachOStringTests.m */,
+				DF118306F8266F1DD09DF1EB /* PLCrashAsyncMObjectTests.m */,
+				FE981230F748B1B13FE5ABC8 /* PLCrashAsyncObjCSectionTests.m */,
+				A62CD6EF6261D13AFF749F98 /* PLCrashAsyncSignalInfoTests.m */,
+				7CC5ED72914546606349C523 /* PLCrashAsyncSymbolicationTests.m */,
+				36CA93EAA359EA3B2A4AB08E /* PLCrashAsyncTests.m */,
+				6F4F3E354AA5E0F270FE8E09 /* PLCrashAsyncThreadTests.m */,
+				860E3BB18156C290579C4528 /* PLCrashFrameCompactUnwindTests.m */,
+				2CA2B5D1A6DAC14C8713AC0C /* PLCrashFrameDWARFUnwindTests.m */,
+				66C3C58F6C22ABD6160C80A7 /* PLCrashFrameStackUnwindTests.m */,
+				DA4328E072BF5E2D2EBB1E3B /* PLCrashFrameWalkerTests.m */,
+				63CB3AA18EB0E50560AB5F26 /* PLCrashHostInfoTests.m */,
+				10C051335C7402E4AA2D1D04 /* PLCrashLogWriterEncodingTests.m */,
+				70A886DB4C473B4A7791FE57 /* PLCrashLogWriterTests.m */,
+				FCB87E36C6EF17B1A971336A /* PLCrashMachExceptionPortSetTests.m */,
+				E22244CF324B60BE96FB94AB /* PLCrashMachExceptionPortTests.m */,
+				395F299D32F64E7D9A8B9FAE /* PLCrashMachExceptionServerTests.m */,
+				0BE36C55809C3E77DC56F655 /* PLCrashProcessInfoTests.m */,
+				99D3B37FE451188182D16E3E /* PLCrashReporterNSErrorTests.m */,
+				B90D439683B696C30428034D /* PLCrashReporterTests.m */,
+				EE2CA938841627CDBAE795F4 /* PLCrashReportTests.m */,
+				0C2693B3132C82CCE2AE8ECC /* PLCrashSignalHandlerTests.m */,
+				51B934B7D93ED027587B1F16 /* PLCrashSysctlTests.m */,
+				7895116DD1616F66A0776A3E /* PLCrashTestCase.h */,
+				72A1EB4E187E5335D5F06BD7 /* PLCrashTestCase.m */,
+				4D9050C867B9070DEA68FC24 /* PLCrashTestThread.h */,
+				E1349589B7737413F56D7668 /* PLCrashTestThread.m */,
+				56439D2DD0180B482CC51218 /* PLCrashTestThreadTests.m */,
+				7CE23D020690F8D441B0D21A /* PLCrashUncaughtExceptionHandlerTests.m */,
+				350EC42322E2607234CF1A50 /* SenTestCompat.h */,
+				F9A7E9A12821553533BE57CF /* Autogenerated */,
+				25DB156E9678B7466BE91E45 /* Libunwind Regression Tests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		F9A7E9A12821553533BE57CF /* Autogenerated */ = {
+			isa = PBXGroup;
+			children = (
+				77F05D421BDE5A3B3C127578 /* PLCrashLogWriterEncodingTests.pb-c.c */,
+				4CEEC77A1ADDD9437B074F89 /* PLCrashLogWriterEncodingTests.pb-c.h */,
+				FA582606DAB130F1254F4025 /* PLCrashLogWriterEncodingTests.proto */,
+			);
+			path = Autogenerated;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		33944BBA417A08AD8164554D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				455D683E153C7562B79FB696 /* mach_exc.h in Headers */,
+				CD0709CE80169DF82D7D97DD /* mach_exc_i386.h in Headers */,
+				D0807993E765BC7C62C8742C /* mach_exc_x86_64.h in Headers */,
+				EEBB0B8B1CB86F89D9675314 /* protobuf-c.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C33626AF73319DA0B260C64 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D50FE49C6FBA36C963ABAD45 /* mach_exc.h in Headers */,
+				D6C548662850ABC200937004 /* PLCrashFeatureConfig.h in Headers */,
+				9870C9FE8DB2FBCF98FDD98D /* mach_exc_i386.h in Headers */,
+				CD1674BBD915BAA90A1F3F50 /* mach_exc_x86_64.h in Headers */,
+				D6C548652850ABC200937004 /* PLCrashReporterConfig.h in Headers */,
+				51BE35187A0119A4FA079C57 /* protobuf-c.h in Headers */,
+				D6C548622850AB9200937004 /* PLCrashNamespace.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7EC5022E21D4A1B695F4D58 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB925F07310837C6B28FDA46 /* mach_exc.h in Headers */,
+				C0A723E501991E9F43A96B54 /* mach_exc_i386.h in Headers */,
+				88A391B81FAD59FBE118AD17 /* mach_exc_x86_64.h in Headers */,
+				0B7FBFD0004AC093DC27905D /* protobuf-c.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		47BA9D468BF79200861C075F /* CrashReporter-macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22FE6913F49227943159AAE8 /* Build configuration list for PBXNativeTarget "CrashReporter-macOSTests" */;
+			buildPhases = (
+				DA5A09C299C920F7ADCC6745 /* Sources */,
+				B608554BAE4869F2D6800878 /* Resources */,
+				05F927CE6EAA539B30EFE1D5 /* Frameworks */,
+				DDBFFBD99449DBD87A1AE358 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4D1337E0F25E33E7DDD1E4B /* PBXTargetDependency */,
+			);
+			name = "CrashReporter-macOSTests";
+			productName = "CrashReporter-macOSTests";
+			productReference = 6B049BC836ABBCBD0E0351DA /* Backtrace_PLCrashReporter.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		682FE9D4250D4B9E47C36676 /* CrashReporter-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A239F41CB82D4B856FA4F2EB /* Build configuration list for PBXNativeTarget "CrashReporter-tvOS" */;
+			buildPhases = (
+				33944BBA417A08AD8164554D /* Headers */,
+				63889E0B2EC0D7E4B4D4BE11 /* Sources */,
+				97CE618434CB03D050D3EEFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CrashReporter-tvOS";
+			productName = "CrashReporter-tvOS";
+			productReference = D27C026B759C888A568802FE /* Backtrace_PLCrashReporter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7D889625960590A2FBE1376A /* CrashReporter-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22149ACC8F433F2C510ADFC6 /* Build configuration list for PBXNativeTarget "CrashReporter-iOS" */;
+			buildPhases = (
+				9C33626AF73319DA0B260C64 /* Headers */,
+				3E75E619A609727E7DACF6DC /* Sources */,
+				8D5377AFD64493B131819072 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CrashReporter-iOS";
+			productName = "CrashReporter-iOS";
+			productReference = E35E059AC79DCF21F5E4060B /* Backtrace_PLCrashReporter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A3C612BC5785E1F98519AA1B /* CrashReporter-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F236B9CA9BAB433FB2C1982 /* Build configuration list for PBXNativeTarget "CrashReporter-iOSTests" */;
+			buildPhases = (
+				61A8E2413A0986B76A8DE09B /* Sources */,
+				6492160ED733D3C8D4F6FBC0 /* Resources */,
+				AD4392A7295FDC2B91CCFDA8 /* Frameworks */,
+				1E6BEBCCFC616DDAFE42A2A5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32F1A401AFEB822C46BD3A7E /* PBXTargetDependency */,
+			);
+			name = "CrashReporter-iOSTests";
+			productName = "CrashReporter-iOSTests";
+			productReference = 739E80987E253344CFCD6C61 /* Backtrace_PLCrashReporter.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5D9769D21C44C416AFB3E54 /* CrashReporter-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C23C0A58CD298E457867C137 /* Build configuration list for PBXNativeTarget "CrashReporter-tvOSTests" */;
+			buildPhases = (
+				377A3053D0A45D8C7F030459 /* Sources */,
+				B745881944BF5BEF4CC194E6 /* Resources */,
+				17B0BE1B4894FD4A685AC468 /* Frameworks */,
+				9777084F0896E85E054207C4 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0856E667D5B86CC53CC39BAD /* PBXTargetDependency */,
+			);
+			name = "CrashReporter-tvOSTests";
+			productName = "CrashReporter-tvOSTests";
+			productReference = 5443B0E417C108F8BA129EF8 /* Backtrace_PLCrashReporter.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D653B74082707D254EBEA806 /* CrashReporter-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09855A15A1221C93E1074CBD /* Build configuration list for PBXNativeTarget "CrashReporter-macOS" */;
+			buildPhases = (
+				C7EC5022E21D4A1B695F4D58 /* Headers */,
+				80E38563EE45CF284B811CAE /* Sources */,
+				4717756F8E21D5C3FBFB019D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CrashReporter-macOS";
+			productName = "CrashReporter-macOS";
+			productReference = 41BBE4C52AE90ED564A5F0CA /* Backtrace_PLCrashReporter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		600A194F3DEADA07A32AF819 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 0F5E81A38B13DEE6104BA4C7 /* Build configuration list for PBXProject "Backtrace-PLCrashReporter" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0D7F05E66E0786B4A2B0AE57;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D889625960590A2FBE1376A /* CrashReporter-iOS */,
+				A3C612BC5785E1F98519AA1B /* CrashReporter-iOSTests */,
+				D653B74082707D254EBEA806 /* CrashReporter-macOS */,
+				47BA9D468BF79200861C075F /* CrashReporter-macOSTests */,
+				682FE9D4250D4B9E47C36676 /* CrashReporter-tvOS */,
+				A5D9769D21C44C416AFB3E54 /* CrashReporter-tvOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4717756F8E21D5C3FBFB019D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F01B46D2D757566EA1CA70 /* PLCrashReport.proto in Resources */,
+				74ED87F541008F59B76704CA /* mach_exc_i386User.inc in Resources */,
+				25675AD475C6EC8080208863 /* mach_exc_x86_64User.inc in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6492160ED733D3C8D4F6FBC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9305481293A89719B92C22D8 /* PLCrashLogWriterEncodingTests.proto in Resources */,
+				E97246462CA632395B04EC93 /* Tests in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5377AFD64493B131819072 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A11991D672E041D038BCFE2E /* PLCrashReport.proto in Resources */,
+				10DF3428E578F6AE5CC765C5 /* mach_exc_i386User.inc in Resources */,
+				048964E2A49FA0CAB67F8A15 /* mach_exc_x86_64User.inc in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97CE618434CB03D050D3EEFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12A084B476AB0113602B07FA /* PLCrashReport.proto in Resources */,
+				DB29FC365231CE01D8829733 /* mach_exc_i386User.inc in Resources */,
+				9D9E6A7BB356C675D54150C0 /* mach_exc_x86_64User.inc in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B608554BAE4869F2D6800878 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39848D4DA6890072842B194A /* PLCrashLogWriterEncodingTests.proto in Resources */,
+				C481CCC7034CC32D9A133746 /* Tests in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B745881944BF5BEF4CC194E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DA59B8BC6E8F93ACB796F28 /* PLCrashLogWriterEncodingTests.proto in Resources */,
+				776DE60353710C33C3762C1F /* Tests in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		377A3053D0A45D8C7F030459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95087F2E08B876C49CD9A383 /* PLCrashAsyncCompactUnwindEncodingTests.m in Sources */,
+				43347523D525BCE02E1CE674 /* PLCrashAsyncDwarfCFAStateEvaluationTests.mm in Sources */,
+				E0290EA94BB05465FF513A89 /* PLCrashAsyncDwarfCFAStateTests.mm in Sources */,
+				A4FF2566BCCA479997B1A674 /* PLCrashAsyncDwarfCIETests.mm in Sources */,
+				8E9C2C776AEA03939A0246EE /* PLCrashAsyncDwarfEncodingTests.mm in Sources */,
+				6A384B95630D10F7BC976350 /* PLCrashAsyncDwarfExpressionTests.mm in Sources */,
+				63C085B80A4B552BBDA79624 /* PLCrashAsyncDwarfFDETests.mm in Sources */,
+				198E088761903DE8BC9D2701 /* PLCrashAsyncDwarfPrimitivesTests.mm in Sources */,
+				DC606F6E5FEACBD7BED6BDD1 /* PLCrashAsyncImageListTests.m in Sources */,
+				00DCCD41E6109A7F13F32B63 /* PLCrashAsyncLinkedListTests.mm in Sources */,
+				488492EA5EA8DA8FE4D68864 /* PLCrashAsyncMObjectTests.m in Sources */,
+				76D1F53910DCA7D3BF211284 /* PLCrashAsyncMachExceptionInfoTests.m in Sources */,
+				DE78A6D065636EA7B78BE9AD /* PLCrashAsyncMachOImageTests.m in Sources */,
+				B4B322B79ADFF91CF872AC16 /* PLCrashAsyncMachOStringTests.m in Sources */,
+				8D1429370BB35CB4875D5102 /* PLCrashAsyncObjCSectionTests.m in Sources */,
+				ABD94AB54B305EBE019FC4A4 /* PLCrashAsyncSignalInfoTests.m in Sources */,
+				E4AA0B094F75AA5148FFA886 /* PLCrashAsyncSymbolicationTests.m in Sources */,
+				BA108CA8F6EF34712FB71B46 /* PLCrashAsyncTests.m in Sources */,
+				597DAE9C40AE8C0236568CA7 /* PLCrashAsyncThreadTests.m in Sources */,
+				349A0E2F50A2D155A4878906 /* PLCrashFrameCompactUnwindTests.m in Sources */,
+				2F246434EB32D8E9EDF045FD /* PLCrashFrameDWARFUnwindTests.m in Sources */,
+				5A327D56DCE6764928A5A5E4 /* PLCrashFrameStackUnwindTests.m in Sources */,
+				9703D34CFE6855C9C3CF3FB7 /* PLCrashFrameWalkerTests.m in Sources */,
+				4A5C275097BAE3D3342D7924 /* PLCrashHostInfoTests.m in Sources */,
+				A18CC8E2FB9FC1293E46AC8F /* PLCrashLogWriterEncodingTests.m in Sources */,
+				618A462B34D544408E841EDD /* PLCrashLogWriterEncodingTests.pb-c.c in Sources */,
+				B5C20FCF4C1E4F570AACEAD5 /* PLCrashLogWriterTests.m in Sources */,
+				897892A1E724DC5E4C00B938 /* PLCrashMachExceptionPortSetTests.m in Sources */,
+				750B7B7149B69A6C9D449089 /* PLCrashMachExceptionPortTests.m in Sources */,
+				2E7755572537464484C20999 /* PLCrashMachExceptionServerTests.m in Sources */,
+				203EEA154C0742E87503EC3B /* PLCrashProcessInfoTests.m in Sources */,
+				A86BFD08FDAD715DA0B6F7C9 /* PLCrashReportTests.m in Sources */,
+				1962105EE75B1E409F35C217 /* PLCrashReporterNSErrorTests.m in Sources */,
+				D9B2BD7A14E8C43D98A16A20 /* PLCrashReporterTests.m in Sources */,
+				52BE5293606BAA9827EEB90A /* PLCrashSignalHandlerTests.m in Sources */,
+				6C7F8FBCEC9F79CD37965E57 /* PLCrashSysctlTests.m in Sources */,
+				04292079D1DB7A618D005E7C /* PLCrashTestCase.m in Sources */,
+				EF26863087213F65CE7C35EB /* PLCrashTestThread.m in Sources */,
+				4087FDA71DD2369618E0D4DD /* PLCrashTestThreadTests.m in Sources */,
+				80844CFEB7143365D21B0FF0 /* PLCrashUncaughtExceptionHandlerTests.m in Sources */,
+				3C77789D72E935F7D027AD9A /* dwarf_opstream_tests.mm in Sources */,
+				75A12D43932421A080018BBB /* dwarf_stack_tests.mm in Sources */,
+				8CA52D6D3FA8218E7D28BB8E /* unwind_test_arm.S in Sources */,
+				2E9955E897B1688159DE3C3E /* unwind_test_arm64.S in Sources */,
+				A0D5E93F317087EF6AAFEFB7 /* unwind_test_arm64_frame.S in Sources */,
+				ABBD2C01DE7613256116B2CE /* unwind_test_arm64_frameless.S in Sources */,
+				F0A1AF1B27EEC7C244E34CAC /* unwind_test_harness.c in Sources */,
+				12509D48AD82270A4FDF10DC /* unwind_test_x86.S in Sources */,
+				16E9774C3D5AA945F39DC8D0 /* unwind_test_x86_64.S in Sources */,
+				3DDD6463460845E658029A55 /* unwind_test_x86_64_disable_compact_frame.S in Sources */,
+				20BA3C5E4313ECD6A1AE5950 /* unwind_test_x86_64_frame.S in Sources */,
+				0B48BA20683FEB8BA87D1675 /* unwind_test_x86_64_frameless.S in Sources */,
+				8D0431B936A09BAB94953EDD /* unwind_test_x86_64_frameless_big.S in Sources */,
+				6286E6AE881751B98F7907B1 /* unwind_test_x86_64_unusual.S in Sources */,
+				7E1A9F2A51D119E287C9C497 /* unwind_test_x86_disable_compact_frame.S in Sources */,
+				2E8E43AED23418311D9C31C4 /* unwind_test_x86_frame.S in Sources */,
+				2020CD175232F8B333A608C4 /* unwind_test_x86_frameless.S in Sources */,
+				06A864916FC55019A1430E20 /* unwind_test_x86_frameless_big.S in Sources */,
+				8860AB5272D3E2075D272C6B /* unwind_test_x86_unusual.S in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E75E619A609727E7DACF6DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF545018B96FE4CEE5E0E0CE /* mach_exc.c in Sources */,
+				09E65227D2A6B0E94A66C267 /* protobuf-c.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61A8E2413A0986B76A8DE09B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045DF07556A0735E018ACFF2 /* PLCrashAsyncCompactUnwindEncodingTests.m in Sources */,
+				540B9FA530B2160F8D093C5A /* PLCrashAsyncDwarfCFAStateEvaluationTests.mm in Sources */,
+				198EEA8F98C3E65A992A00B6 /* PLCrashAsyncDwarfCFAStateTests.mm in Sources */,
+				E1BE8BCFD0DA67A03F8B4C09 /* PLCrashAsyncDwarfCIETests.mm in Sources */,
+				A43D01CF5AD0597570FD63A2 /* PLCrashAsyncDwarfEncodingTests.mm in Sources */,
+				903FBEA4878B2CED9FB1426E /* PLCrashAsyncDwarfExpressionTests.mm in Sources */,
+				4D36D0FC48E9218ABED9E21F /* PLCrashAsyncDwarfFDETests.mm in Sources */,
+				D6AA1EF87A89B4EC64B79E10 /* PLCrashAsyncDwarfPrimitivesTests.mm in Sources */,
+				911CB86A88012696E052A2B7 /* PLCrashAsyncImageListTests.m in Sources */,
+				FF67359E6EEA5CAF93B6EC3D /* PLCrashAsyncLinkedListTests.mm in Sources */,
+				A7CF506D6C786DEBABAFF902 /* PLCrashAsyncMObjectTests.m in Sources */,
+				1CB01F95FDAB57171B638D21 /* PLCrashAsyncMachExceptionInfoTests.m in Sources */,
+				7B20B01C6D75A6AFBB6EE639 /* PLCrashAsyncMachOImageTests.m in Sources */,
+				4FBF00C249C689A20D01775A /* PLCrashAsyncMachOStringTests.m in Sources */,
+				AFCA7372DBA0B11774E5227C /* PLCrashAsyncObjCSectionTests.m in Sources */,
+				13377DCC54D8AFB36CCD9CD6 /* PLCrashAsyncSignalInfoTests.m in Sources */,
+				84B0F90D48429EA7E782DAE4 /* PLCrashAsyncSymbolicationTests.m in Sources */,
+				EA1C9CB9A446BCE367DE43C5 /* PLCrashAsyncTests.m in Sources */,
+				5BC6EB4D97C912FCD7595AFF /* PLCrashAsyncThreadTests.m in Sources */,
+				1E3F1D4E70F16FA93B613AB2 /* PLCrashFrameCompactUnwindTests.m in Sources */,
+				9EADD3133DCA159F8C7A90A0 /* PLCrashFrameDWARFUnwindTests.m in Sources */,
+				0DF65D7BCDC108F659690C4D /* PLCrashFrameStackUnwindTests.m in Sources */,
+				CFE6B0429153C2B81C303003 /* PLCrashFrameWalkerTests.m in Sources */,
+				7FDBCB81DCEFE8C5CF7F46A0 /* PLCrashHostInfoTests.m in Sources */,
+				855749E9CECDF7F7753948D9 /* PLCrashLogWriterEncodingTests.m in Sources */,
+				4C0EB2F7D6DF1F10C57F5CBD /* PLCrashLogWriterEncodingTests.pb-c.c in Sources */,
+				D21A95AB3FB96C26B0EDD5DA /* PLCrashLogWriterTests.m in Sources */,
+				ECB38C6482B9D22027F1C563 /* PLCrashMachExceptionPortSetTests.m in Sources */,
+				7989898563CA0B084CA0FD9D /* PLCrashMachExceptionPortTests.m in Sources */,
+				BF9EEB844065C8936E51840A /* PLCrashMachExceptionServerTests.m in Sources */,
+				FB10408CC38122C920547293 /* PLCrashProcessInfoTests.m in Sources */,
+				712D7550CB27B2D6C6B2318B /* PLCrashReportTests.m in Sources */,
+				CE5049CE83AEDDBCC3B5365F /* PLCrashReporterNSErrorTests.m in Sources */,
+				AE71F1D1F628957F52C20052 /* PLCrashReporterTests.m in Sources */,
+				0814FD6D4892E95E6F01C673 /* PLCrashSignalHandlerTests.m in Sources */,
+				30F8D1CC791E26933ECF06EE /* PLCrashSysctlTests.m in Sources */,
+				F17308EDE966838E775DB288 /* PLCrashTestCase.m in Sources */,
+				FA477A33AF8551927603C0E7 /* PLCrashTestThread.m in Sources */,
+				C834A77EE25406C3F5D5EB05 /* PLCrashTestThreadTests.m in Sources */,
+				F37B8D14B79455C577084954 /* PLCrashUncaughtExceptionHandlerTests.m in Sources */,
+				614EA45AA5591B67D2F203F0 /* dwarf_opstream_tests.mm in Sources */,
+				5CD64644B3A98C9FA32D6AF4 /* dwarf_stack_tests.mm in Sources */,
+				FE75C748FA24B451543C7515 /* unwind_test_arm.S in Sources */,
+				BE9D2C8462B1E24895A51549 /* unwind_test_arm64.S in Sources */,
+				C19DB19F28A4475EAC5F00CF /* unwind_test_arm64_frame.S in Sources */,
+				E57C92F72CDF7C9FD12D338C /* unwind_test_arm64_frameless.S in Sources */,
+				821D8A2E5315D44E74C5F611 /* unwind_test_harness.c in Sources */,
+				23BAF29FC60ACD9FAE9BA7D9 /* unwind_test_x86.S in Sources */,
+				1D315FF909C95E4DAB3B65F3 /* unwind_test_x86_64.S in Sources */,
+				8F2C24C5032DE9F6DF5143DA /* unwind_test_x86_64_disable_compact_frame.S in Sources */,
+				99209D0781950E7AAE3C83E8 /* unwind_test_x86_64_frame.S in Sources */,
+				CF3B543DC20A10DBBC9774CA /* unwind_test_x86_64_frameless.S in Sources */,
+				173307E5C62D69B1FA8197A8 /* unwind_test_x86_64_frameless_big.S in Sources */,
+				93E51C765652AAD00360EBE9 /* unwind_test_x86_64_unusual.S in Sources */,
+				9F2446D610EBB87CEB848BEB /* unwind_test_x86_disable_compact_frame.S in Sources */,
+				85D5BFCD1F4FFAE78A1C2BE0 /* unwind_test_x86_frame.S in Sources */,
+				13D23679844FDAA6781290C3 /* unwind_test_x86_frameless.S in Sources */,
+				A74E86C3472F4738E05CC421 /* unwind_test_x86_frameless_big.S in Sources */,
+				92A1A86E08A0FE29B99046F0 /* unwind_test_x86_unusual.S in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63889E0B2EC0D7E4B4D4BE11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D95A8C8A4B3523ECB4CC4E4 /* mach_exc.c in Sources */,
+				6BD7ACE8314150AE59AF8081 /* protobuf-c.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80E38563EE45CF284B811CAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B57C19740D26749C6A36247 /* mach_exc.c in Sources */,
+				4841255900632D1ADEB53F8E /* protobuf-c.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA5A09C299C920F7ADCC6745 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CEECC01FBA951F403D9ED6 /* PLCrashAsyncCompactUnwindEncodingTests.m in Sources */,
+				F454FC2141FC9D12A774EC45 /* PLCrashAsyncDwarfCFAStateEvaluationTests.mm in Sources */,
+				E35C4162B900F86A12A164FE /* PLCrashAsyncDwarfCFAStateTests.mm in Sources */,
+				BFEFF936C0632D21C3048907 /* PLCrashAsyncDwarfCIETests.mm in Sources */,
+				D8200902DB8448E679B3454D /* PLCrashAsyncDwarfEncodingTests.mm in Sources */,
+				D806C8B02AFA622E019EA31F /* PLCrashAsyncDwarfExpressionTests.mm in Sources */,
+				DB7A88088508F6C6A67AC045 /* PLCrashAsyncDwarfFDETests.mm in Sources */,
+				B64C9AE353489E5A37DCA12A /* PLCrashAsyncDwarfPrimitivesTests.mm in Sources */,
+				B8753C815CF1A85A30BA936C /* PLCrashAsyncImageListTests.m in Sources */,
+				8AB196F7BB18226D25CE53BD /* PLCrashAsyncLinkedListTests.mm in Sources */,
+				1EA467AE8AC67851B99BCB9B /* PLCrashAsyncMObjectTests.m in Sources */,
+				E65A6A888794C1430BB615F3 /* PLCrashAsyncMachExceptionInfoTests.m in Sources */,
+				660030EA09AB2019BFA65E85 /* PLCrashAsyncMachOImageTests.m in Sources */,
+				CF8163B8851D762324117B3E /* PLCrashAsyncMachOStringTests.m in Sources */,
+				E3254F9B137F6725B892450E /* PLCrashAsyncObjCSectionTests.m in Sources */,
+				07B43EBACFD3B239FB5CEFF8 /* PLCrashAsyncSignalInfoTests.m in Sources */,
+				64F9FF1AE22977C717C729F8 /* PLCrashAsyncSymbolicationTests.m in Sources */,
+				0FDEF640DC34D2C7EDC6DDC0 /* PLCrashAsyncTests.m in Sources */,
+				132052D0CD34F1487024969D /* PLCrashAsyncThreadTests.m in Sources */,
+				A238050F9BB3904C39A5307A /* PLCrashFrameCompactUnwindTests.m in Sources */,
+				742672DEBA49B42736761FE1 /* PLCrashFrameDWARFUnwindTests.m in Sources */,
+				6E524C838FD6B586F390415D /* PLCrashFrameStackUnwindTests.m in Sources */,
+				E02129E6191F76FABB2DAACC /* PLCrashFrameWalkerTests.m in Sources */,
+				8301AAF76D60EF74BC176A82 /* PLCrashHostInfoTests.m in Sources */,
+				D67132EF96374BC0DF6748E4 /* PLCrashLogWriterEncodingTests.m in Sources */,
+				097BAD4052CAE59A6F921BF0 /* PLCrashLogWriterEncodingTests.pb-c.c in Sources */,
+				B64C83FA503DD808C2AD4740 /* PLCrashLogWriterTests.m in Sources */,
+				E39D774229A92CC24A3815D5 /* PLCrashMachExceptionPortSetTests.m in Sources */,
+				14233643D519E50CF2FE62C6 /* PLCrashMachExceptionPortTests.m in Sources */,
+				14A6FB23ADC43E45C135C0B9 /* PLCrashMachExceptionServerTests.m in Sources */,
+				8AAA8E91F8021A6E7C4A6879 /* PLCrashProcessInfoTests.m in Sources */,
+				4775F91FD0DB1B71E1685BAB /* PLCrashReportTests.m in Sources */,
+				E6D801BF41870B0D6C2DE0CD /* PLCrashReporterNSErrorTests.m in Sources */,
+				336ABA2B2FEECCDC5D3F5B6C /* PLCrashReporterTests.m in Sources */,
+				26785782842BF678E6B40EA5 /* PLCrashSignalHandlerTests.m in Sources */,
+				C8B96A87F529331E5C1EBABC /* PLCrashSysctlTests.m in Sources */,
+				FCCFB7ED933E760718694A27 /* PLCrashTestCase.m in Sources */,
+				CFFF39936AEBB5A795A7F3FC /* PLCrashTestThread.m in Sources */,
+				A7B3979F0C9B15F989039BC1 /* PLCrashTestThreadTests.m in Sources */,
+				B49B53E8CD3D300339C7DDA1 /* PLCrashUncaughtExceptionHandlerTests.m in Sources */,
+				CA7ABA5281917BF7229F01AD /* dwarf_opstream_tests.mm in Sources */,
+				F7E958BC86C778AF7BC0686E /* dwarf_stack_tests.mm in Sources */,
+				C067D8479C272624E18E4887 /* unwind_test_arm.S in Sources */,
+				8F0F70ECD4C0E507B91AB156 /* unwind_test_arm64.S in Sources */,
+				039555BD6DF039C2F9E0E074 /* unwind_test_arm64_frame.S in Sources */,
+				6AE2A418BA06451E28AD305B /* unwind_test_arm64_frameless.S in Sources */,
+				CE8EC4CC65CCFB9A87BE3692 /* unwind_test_harness.c in Sources */,
+				970C777F556BC476154F0179 /* unwind_test_x86.S in Sources */,
+				AE7ED719CC11FB1C4B81359E /* unwind_test_x86_64.S in Sources */,
+				75B5E38FC83A746B39910130 /* unwind_test_x86_64_disable_compact_frame.S in Sources */,
+				F5C0C6247BA6B82D71E4F1AB /* unwind_test_x86_64_frame.S in Sources */,
+				55D5CDF21A31A341E23437AF /* unwind_test_x86_64_frameless.S in Sources */,
+				4D024BAC7A9DDF85A81E3884 /* unwind_test_x86_64_frameless_big.S in Sources */,
+				B9B8BF17A8BE0329119D3F26 /* unwind_test_x86_64_unusual.S in Sources */,
+				E40806E90197BDFE2DC4183B /* unwind_test_x86_disable_compact_frame.S in Sources */,
+				F3EA21AE2909CC05D62056CE /* unwind_test_x86_frame.S in Sources */,
+				D7B8D94C7B9C5B88E84D0114 /* unwind_test_x86_frameless.S in Sources */,
+				41DAE4768F080930AAEF8C57 /* unwind_test_x86_frameless_big.S in Sources */,
+				4C4912C977003FC535A72AB2 /* unwind_test_x86_unusual.S in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0856E667D5B86CC53CC39BAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 682FE9D4250D4B9E47C36676 /* CrashReporter-tvOS */;
+			targetProxy = ED36357AD94EB0456BF3F420 /* PBXContainerItemProxy */;
+		};
+		32F1A401AFEB822C46BD3A7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D889625960590A2FBE1376A /* CrashReporter-iOS */;
+			targetProxy = F23CDD4CAEBF712638D301BC /* PBXContainerItemProxy */;
+		};
+		C4D1337E0F25E33E7DDD1E4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D653B74082707D254EBEA806 /* CrashReporter-macOS */;
+			targetProxy = 05D414196CE681455A72A668 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		108A8C2AB0F0E6FB5FC0A463 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Sources/PLCrashNamespace.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					PLCR_PRIVATE,
+					PLCF_DEBUG_BUILD,
+					"PLCF_MIN_MACOSX_SDK=$(PL_MIN_MACOSX_SDK)",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Dependencies/protobuf-c/protobuf-c";
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PL_BUILD_CONFIG_FLAG = PLCF_DEBUG_BUILD;
+				PL_MIN_MACOSX_SDK = 101400;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.backtrace.plcrashreporter.CrashReporter-tvOS";
+				PRODUCT_MODULE_NAME = Backtrace_PLCrashReporter;
+				PRODUCT_NAME = Backtrace_PLCrashReporter;
+				PROTOBUF_C_UNPACK_ERROR = PLCF_DEBUG;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 3;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		43F26CF90D48FE9E6BE7707B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Sources/PLCrashNamespace.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					PLCR_PRIVATE,
+					PLCF_RELEASE_BUILD,
+					"PLCF_MIN_MACOSX_SDK=$(PL_MIN_MACOSX_SDK)",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Dependencies/protobuf-c/protobuf-c";
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PL_BUILD_CONFIG_FLAG = PLCF_RELEASE_BUILD;
+				PL_MIN_MACOSX_SDK = 101400;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.backtrace.plcrashreporter.CrashReporter-iOS";
+				PRODUCT_MODULE_NAME = Backtrace_PLCrashReporter;
+				PRODUCT_NAME = Backtrace_PLCrashReporter;
+				PROTOBUF_C_UNPACK_ERROR = PLCF_DEBUG;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		4D7199B249A402C5244FF779 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		53DB8E7EC229BD62F3ECF9E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Sources/include/PLCrashNamespace.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					PLCR_PRIVATE,
+					PLCF_DEBUG_BUILD,
+					"PLCF_MIN_MACOSX_SDK=$(PL_MIN_MACOSX_SDK)",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Dependencies/protobuf-c/protobuf-c";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PL_BUILD_CONFIG_FLAG = PLCF_DEBUG_BUILD;
+				PL_MIN_MACOSX_SDK = 101400;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.backtrace.plcrashreporter.CrashReporter-iOSTests";
+				PRODUCT_MODULE_NAME = Backtrace_PLCrashReporter;
+				PRODUCT_NAME = Backtrace_PLCrashReporter;
+				PROTOBUF_C_UNPACK_ERROR = PLCF_DEBUG;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5522FE25AFC9E3BD04BE9F66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Sources/PLCrashNamespace.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					PLCR_PRIVATE,
+					PLCF_RELEASE_BUILD,
+					"PLCF_MIN_MACOSX_SDK=$(PL_MIN_MACOSX_SDK)",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Dependencies/protobuf-c/protobuf-c";
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PL_BUILD_CONFIG_FLAG = PLCF_RELEASE_BUILD;
+				PL_MIN_MACOSX_SDK = 101400;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.backtrace.plcrashreporter.CrashReporter-tvOS";
+				PRODUCT_MODULE_NAME = Backtrace_PLCrashReporter;
+				PRODUCT_NAME = Backtrace_PLCrashReporter;
+				PROTOBUF_C_UNPACK_ERROR = PLCF_DEBUG;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 3;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		589128F1056A8A6489DE02A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Sources/PLCrashNamespace.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					PLCR_PRIVATE,
+					PLCF_DEBUG_BUILD,
+					"PLCF_MIN_MACOSX_SDK=$(PL_MIN_MACOSX_SDK)",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Dependencies/protobuf-c/protobuf-c";
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PL_BUILD_CONFIG_FLAG = PLCF_DEBUG_BUILD;
+				PL_MIN_MACOSX_SDK = 101400;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.backtrace.plcrashreporter.CrashReporter-macOS";
+				PRODUCT_MODULE_NAME = Backtrace_PLCrashReporter;
+				PRODUCT_NAME = Backtrace_PLCrashReporter;
+				PROTOBUF_C_UNPACK_ERROR = PLCF_DEBUG;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		6C4B9ACD9F34D19E9747CD1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Sources/include/PLCrashNamespace.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					PLCR_PRIVATE,
+					PLCF_DEBUG_BUILD,
+					"PLCF_MIN_MACOSX_SDK=$(PL_MIN_MACOSX_SDK)",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Dependencies/protobuf-c/protobuf-c";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PL_BUILD_CONFIG_FLAG = PLCF_DEBUG_BUILD;
+				PL_MIN_MACOSX_SDK = 101400;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.backtrace.plcrashreporter.CrashReporter-macOSTests";
+				PRODUCT_MODULE_NAME = Backtrace_PLCrashReporter;
+				PRODUCT_NAME = Backtrace_PLCrashReporter;
+				PROTOBUF_C_UNPACK_ERROR = PLCF_DEBUG;
+				SDKROOT = macosx;
+				SUPPORTS_MACCATALYST = NO;
+			};
+			name = Debug;
+		};
+		76BDF2F3F2E20CB8BF777746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Sources/include/PLCrashNamespace.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					PLCR_PRIVATE,
+					PLCF_DEBUG_BUILD,
+					"PLCF_MIN_MACOSX_SDK=$(PL_MIN_MACOSX_SDK)",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Dependencies/protobuf-c/protobuf-c";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PL_BUILD_CONFIG_FLAG = PLCF_DEBUG_BUILD;
+				PL_MIN_MACOSX_SDK = 101400;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.backtrace.plcrashreporter.CrashReporter-tvOSTests";
+				PRODUCT_MODULE_NAME = Backtrace_PLCrashReporter;
+				PRODUCT_NAME = Backtrace_PLCrashReporter;
+				PROTOBUF_C_UNPACK_ERROR = PLCF_DEBUG;
+				SDKROOT = appletvos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		A50A7213126167C5CB9C1E80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Sources/include/PLCrashNamespace.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					PLCR_PRIVATE,
+					PLCF_RELEASE_BUILD,
+					"PLCF_MIN_MACOSX_SDK=$(PL_MIN_MACOSX_SDK)",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Dependencies/protobuf-c/protobuf-c";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PL_BUILD_CONFIG_FLAG = PLCF_RELEASE_BUILD;
+				PL_MIN_MACOSX_SDK = 101400;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.backtrace.plcrashreporter.CrashReporter-iOSTests";
+				PRODUCT_MODULE_NAME = Backtrace_PLCrashReporter;
+				PRODUCT_NAME = Backtrace_PLCrashReporter;
+				PROTOBUF_C_UNPACK_ERROR = PLCF_DEBUG;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5DFC7C64C341B1F5D9BA901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Sources/PLCrashNamespace.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					PLCR_PRIVATE,
+					PLCF_DEBUG_BUILD,
+					"PLCF_MIN_MACOSX_SDK=$(PL_MIN_MACOSX_SDK)",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Dependencies/protobuf-c/protobuf-c";
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PL_BUILD_CONFIG_FLAG = PLCF_DEBUG_BUILD;
+				PL_MIN_MACOSX_SDK = 101400;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.backtrace.plcrashreporter.CrashReporter-iOS";
+				PRODUCT_MODULE_NAME = Backtrace_PLCrashReporter;
+				PRODUCT_NAME = Backtrace_PLCrashReporter;
+				PROTOBUF_C_UNPACK_ERROR = PLCF_DEBUG;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		B5BA2870642F519AB65C7ED1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D37C235320402862FCB4E291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Sources/PLCrashNamespace.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					PLCR_PRIVATE,
+					PLCF_RELEASE_BUILD,
+					"PLCF_MIN_MACOSX_SDK=$(PL_MIN_MACOSX_SDK)",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Dependencies/protobuf-c/protobuf-c";
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PL_BUILD_CONFIG_FLAG = PLCF_RELEASE_BUILD;
+				PL_MIN_MACOSX_SDK = 101400;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.backtrace.plcrashreporter.CrashReporter-macOS";
+				PRODUCT_MODULE_NAME = Backtrace_PLCrashReporter;
+				PRODUCT_NAME = Backtrace_PLCrashReporter;
+				PROTOBUF_C_UNPACK_ERROR = PLCF_DEBUG;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		D575CA3179585B54D9055D6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Sources/include/PLCrashNamespace.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					PLCR_PRIVATE,
+					PLCF_RELEASE_BUILD,
+					"PLCF_MIN_MACOSX_SDK=$(PL_MIN_MACOSX_SDK)",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Dependencies/protobuf-c/protobuf-c";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PL_BUILD_CONFIG_FLAG = PLCF_RELEASE_BUILD;
+				PL_MIN_MACOSX_SDK = 101400;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.backtrace.plcrashreporter.CrashReporter-tvOSTests";
+				PRODUCT_MODULE_NAME = Backtrace_PLCrashReporter;
+				PRODUCT_NAME = Backtrace_PLCrashReporter;
+				PROTOBUF_C_UNPACK_ERROR = PLCF_DEBUG;
+				SDKROOT = appletvos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		DAE6D1FFD0245EF9E7079916 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Sources/include/PLCrashNamespace.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					PLCR_PRIVATE,
+					PLCF_RELEASE_BUILD,
+					"PLCF_MIN_MACOSX_SDK=$(PL_MIN_MACOSX_SDK)",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Dependencies/protobuf-c/protobuf-c";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PL_BUILD_CONFIG_FLAG = PLCF_RELEASE_BUILD;
+				PL_MIN_MACOSX_SDK = 101400;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.backtrace.plcrashreporter.CrashReporter-macOSTests";
+				PRODUCT_MODULE_NAME = Backtrace_PLCrashReporter;
+				PRODUCT_NAME = Backtrace_PLCrashReporter;
+				PROTOBUF_C_UNPACK_ERROR = PLCF_DEBUG;
+				SDKROOT = macosx;
+				SUPPORTS_MACCATALYST = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09855A15A1221C93E1074CBD /* Build configuration list for PBXNativeTarget "CrashReporter-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				589128F1056A8A6489DE02A5 /* Debug */,
+				D37C235320402862FCB4E291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0F236B9CA9BAB433FB2C1982 /* Build configuration list for PBXNativeTarget "CrashReporter-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53DB8E7EC229BD62F3ECF9E7 /* Debug */,
+				A50A7213126167C5CB9C1E80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0F5E81A38B13DEE6104BA4C7 /* Build configuration list for PBXProject "Backtrace-PLCrashReporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D7199B249A402C5244FF779 /* Debug */,
+				B5BA2870642F519AB65C7ED1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		22149ACC8F433F2C510ADFC6 /* Build configuration list for PBXNativeTarget "CrashReporter-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5DFC7C64C341B1F5D9BA901 /* Debug */,
+				43F26CF90D48FE9E6BE7707B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		22FE6913F49227943159AAE8 /* Build configuration list for PBXNativeTarget "CrashReporter-macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C4B9ACD9F34D19E9747CD1E /* Debug */,
+				DAE6D1FFD0245EF9E7079916 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A239F41CB82D4B856FA4F2EB /* Build configuration list for PBXNativeTarget "CrashReporter-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				108A8C2AB0F0E6FB5FC0A463 /* Debug */,
+				5522FE25AFC9E3BD04BE9F66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C23C0A58CD298E457867C137 /* Build configuration list for PBXNativeTarget "CrashReporter-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76BDF2F3F2E20CB8BF777746 /* Debug */,
+				D575CA3179585B54D9055D6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 600A194F3DEADA07A32AF819 /* Project object */;
+}
